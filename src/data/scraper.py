@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from datetime import datetime
+import os
 
 def parse_month_list(text):
    """Parse a column of text containing months, removing 'India' and any year headers or category headers"""
@@ -160,28 +161,35 @@ def scrape_india_visa_data(url, category_type):
        return None
 
 if __name__ == "__main__":
-   print("Starting India Visa Bulletin Scraper...")
-   
-   urls = {
-       "Employment-Based": "https://www.jackson-hertogs.com/us-immigration/visa-bulletin-and-quota-movement-2/employment-based-quota-bulletin-movement-2-2/",
-       "Family-Based": "https://www.jackson-hertogs.com/us-immigration/visa-bulletin-and-quota-movement-2/india-family-based-quota-bulletin-movement/"
-   }
-   
-   try:
-       for category_type, url in urls.items():
-           df = scrape_india_visa_data(url, category_type)
-           
-           if df is not None and not df.empty:
-               filename = f"india_{category_type.lower().replace('-', '_')}_movement.csv"
-               df.to_csv(filename, index=False)
-               
-               print(f"\n{category_type} Data Summary:")
-               print(f"Date Range: {df['date'].min()} to {df['date'].max()}")
-               print(f"Total Records: {len(df)}")
-               print("\nMost recent entries:")
-               print(df.nlargest(5, 'date'))
-           else:
-               print(f"No {category_type} data was collected")
-               
-   except Exception as e:
-       print(f"Error in main execution: {e}")
+    print("Starting India Visa Bulletin Scraper...")
+    
+    urls = {
+        "Employment-Based": "https://www.jackson-hertogs.com/us-immigration/visa-bulletin-and-quota-movement-2/employment-based-quota-bulletin-movement-2-2/",
+        "Family-Based": "https://www.jackson-hertogs.com/us-immigration/visa-bulletin-and-quota-movement-2/india-family-based-quota-bulletin-movement/"
+    }
+    
+    # Create data/raw directory if it doesn't exist
+    # Go up two levels (../../) from src/data to reach project root
+    raw_data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data', 'raw')
+    os.makedirs(raw_data_dir, exist_ok=True)
+    
+    try:
+        for category_type, url in urls.items():
+            df = scrape_india_visa_data(url, category_type)
+            
+            if df is not None and not df.empty:
+                filename = f"india_{category_type.lower().replace('-', '_')}_movement.csv"
+                file_path = os.path.join(raw_data_dir, filename)
+                df.to_csv(file_path, index=False)
+                
+                print(f"\n{category_type} Data Summary:")
+                print(f"Data saved to: {file_path}")
+                print(f"Date Range: {df['date'].min()} to {df['date'].max()}")
+                print(f"Total Records: {len(df)}")
+                print("\nMost recent entries:")
+                print(df.nlargest(5, 'date'))
+            else:
+                print(f"No {category_type} data was collected")
+                
+    except Exception as e:
+        print(f"Error in main execution: {e}")
