@@ -71,3 +71,4 @@ backend/data/processed/*
 .DS_Store
 *.pem
 npm-debug.log*
+.vercel
