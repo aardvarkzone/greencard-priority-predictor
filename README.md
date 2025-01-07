@@ -120,3 +120,10 @@ FRONTEND_URL=http://localhost:3000
 ## Authors
 - [Yashmit Singh](https://github.com/yashmit07)
 - [Advait Arumugam](https://github.com/aardvarkzone)
+
+## Future Work
+- Support other countries
+- Add comparison tools between different visa categories
+- Include visa bulletin news and updates section
+- Add multi-language support
+- Add dark mode support
