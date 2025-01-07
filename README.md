@@ -1,7 +1,7 @@
 # Greencard Priority Date Predictor
 
 ## Vercel app
-[Click here!](greencard-priority-predictor.vercel.app)
+[Click here!](https://greencard-priority-predictor.vercel.app/)
 
 ## Overview
 A full-stack application with a PyTorch-based machine learning system that predicts green card priority date movements for India. The project analyzes historical visa bulletin data to help applicants estimate waiting times for employment-based immigration categories, providing predictions through both a machine learning model and a user-friendly web interface.
@@ -118,5 +118,5 @@ FRONTEND_URL=http://localhost:3000
 5. Open a Pull Request
 
 ## Authors
-[Yashmit Singh](https://github.com/yashmit07)
-[Advait Arumugam](https://github.com/aardvarkzone)
+- [Yashmit Singh](https://github.com/yashmit07)
+- [Advait Arumugam](https://github.com/aardvarkzone)
