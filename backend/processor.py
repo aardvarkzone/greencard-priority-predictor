@@ -56,7 +56,7 @@ class VisaBulletinProcessor:
         try:
             # Fix common typos
             if 'DEB' in date_str:
-                date_str = date_str.replace('DEB', 'FEB')
+                date_str = date_str.replace('DEB', 'DEC')
             if 'O1' in date_str:  # Handle O vs 0
                 date_str = date_str.replace('O1', '01')
                 
@@ -237,42 +237,26 @@ class VisaBulletinProcessor:
 
 def main():
     """Process visa bulletin data."""
-    # Set up paths
-    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-    raw_dir = os.path.join(base_dir, 'data', 'raw')
-    processed_dir = os.path.join(base_dir, 'data', 'processed')
-    
-    # Create processed directory if needed
-    os.makedirs(processed_dir, exist_ok=True)
-    
     try:
-        # Initialize processor
         processor = VisaBulletinProcessor()
         
         # Process employment data
-        emp_df = pd.read_csv(os.path.join(raw_dir, 'india_employment_based_movement.csv'))
+        emp_df = pd.read_csv('data/raw/india_employment_based_movement.csv')
         processed_emp = processor.process_employment_data(emp_df)
         
         # Process family data
-        fam_df = pd.read_csv(os.path.join(raw_dir, 'india_family_based_movement.csv'))
+        fam_df = pd.read_csv('data/raw/india_family_based_movement.csv')
         processed_fam = processor.process_family_data(fam_df)
         
         # Save processed files
-        processed_emp.to_csv(
-            os.path.join(processed_dir, 'processed_employment.csv'),
-            index=False
-        )
-        processed_fam.to_csv(
-            os.path.join(processed_dir, 'processed_family.csv'),
-            index=False
-        )
+        os.makedirs('data/processed', exist_ok=True)
+        processed_emp.to_csv('data/processed/processed_employment.csv', index=False)
+        processed_fam.to_csv('data/processed/processed_family.csv', index=False)
         
         logging.info("\nProcessing completed successfully!")
-        logging.info(f"Employment data shape: {processed_emp.shape}")
-        logging.info(f"Family data shape: {processed_fam.shape}")
         
     except Exception as e:
-        logging.error(f"Error in processing: {str(e)}", exc_info=True)
+        logging.error(f"Error in processing: {str(e)}")
         raise
 
 if __name__ == "__main__":

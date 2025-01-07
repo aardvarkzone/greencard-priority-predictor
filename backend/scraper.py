@@ -169,8 +169,8 @@ if __name__ == "__main__":
     }
     
     # Create data/raw directory if it doesn't exist
-    # Go up two levels (../../) from src/data to reach project root
-    raw_data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data', 'raw')
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # Get directory of scraper.py
+    raw_data_dir = os.path.join(base_dir, 'data', 'raw')
     os.makedirs(raw_data_dir, exist_ok=True)
     
     try:
