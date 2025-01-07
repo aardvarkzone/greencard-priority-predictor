@@ -6,8 +6,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Progress } from "@/components/ui/progress";
-import { Calendar, Clock, AlertCircle, TrendingUp, CalendarClock } from 'lucide-react';
+import { Calendar, Clock, TrendingUp, CalendarClock, Globe, Users, Briefcase } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
+type VisaCategory = 'EB1' | 'EB2' | 'EB3' | 'F1' | 'F2A' | 'F2B' | 'F3' | 'F4';
 
 interface PredictionResult {
   waitTime: number;
@@ -16,11 +18,23 @@ interface PredictionResult {
   estimatedDate: string;
 }
 
+const CATEGORY_DESCRIPTIONS: Record<VisaCategory, string> = {
+  'EB1': 'Priority Workers (Extraordinary Ability, Outstanding Researchers, Multinational Executives)',
+  'EB2': 'Advanced Degree or Exceptional Ability',
+  'EB3': 'Skilled Workers, Professionals, Other Workers',
+  'F1': 'Unmarried Sons and Daughters of U.S. Citizens',
+  'F2A': 'Spouses and Children of Permanent Residents',
+  'F2B': 'Unmarried Sons and Daughters of Permanent Residents',
+  'F3': 'Married Sons and Daughters of U.S. Citizens',
+  'F4': 'Brothers and Sisters of Adult U.S. Citizens'
+};
+
 export default function PredictionInterface() {
+  const [activeCategory, setActiveCategory] = useState<'employment' | 'family'>('employment');
   const [formData, setFormData] = useState({
     priorityDate: '',
     visaCategory: '',
-    country: '',
+    country: 'india'
   });
   const [prediction, setPrediction] = useState<PredictionResult | null>(null);
   const [loading, setLoading] = useState(false);
@@ -43,7 +57,7 @@ export default function PredictionInterface() {
       const data = await response.json();
       setPrediction({
         ...data,
-        historicalTrend: generateMockTrend(), // Remove this in production
+        historicalTrend: generateMockTrend(),
         estimatedDate: calculateEstimatedDate(new Date(), data.waitTime)
       });
     } catch (err) {
@@ -53,7 +67,6 @@ export default function PredictionInterface() {
     }
   };
 
-  // Helper function to generate mock trend data (remove in production)
   const generateMockTrend = () => {
     return Array.from({ length: 12 }, (_, i) => ({
       date: `2024-${String(i + 1).padStart(2, '0')}`,
@@ -77,15 +90,15 @@ export default function PredictionInterface() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Calendar className="w-6 h-6 text-green-500" />
-            Green Card Priority Date Predictor
+            Visa Bulletin Priority Date Predictor
           </CardTitle>
           <CardDescription>
-            Get estimated processing times based on historical visa bulletin data
+            Get estimated processing times for employment-based and family-based categories
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-medium flex items-center gap-2">
                   <CalendarClock className="w-4 h-4 text-gray-500" />
@@ -98,7 +111,52 @@ export default function PredictionInterface() {
                   onChange={(e) => setFormData({...formData, priorityDate: e.target.value})}
                 />
               </div>
-              
+
+              <div className="space-y-2">
+                <label className="text-sm font-medium flex items-center gap-2">
+                  <Globe className="w-4 h-4 text-gray-500" />
+                  Country of Chargeability
+                </label>
+                <Select 
+                  defaultValue="india"
+                  onValueChange={(value) => setFormData({...formData, country: value})}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select country" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="india">India</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <Button
+                  type="button"
+                  variant={activeCategory === 'employment' ? 'default' : 'outline'}
+                  className={`flex-1 flex items-center justify-center gap-2 ${
+                    activeCategory === 'employment' ? 'bg-green-500 hover:bg-green-600' : ''
+                  }`}
+                  onClick={() => setActiveCategory('employment')}
+                >
+                  <Briefcase className="w-4 h-4" />
+                  Employment Based
+                </Button>
+                <Button
+                  type="button"
+                  variant={activeCategory === 'family' ? 'default' : 'outline'}
+                  className={`flex-1 flex items-center justify-center gap-2 ${
+                    activeCategory === 'family' ? 'bg-green-500 hover:bg-green-600' : ''
+                  }`}
+                  onClick={() => setActiveCategory('family')}
+                >
+                  <Users className="w-4 h-4" />
+                  Family Based
+                </Button>
+              </div>
+
               <div className="space-y-2">
                 <label className="text-sm font-medium flex items-center gap-2">
                   <TrendingUp className="w-4 h-4 text-gray-500" />
@@ -109,27 +167,21 @@ export default function PredictionInterface() {
                     <SelectValue placeholder="Select category" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="EB1">EB1 - Priority Workers</SelectItem>
-                    <SelectItem value="EB2">EB2 - Advanced Degrees</SelectItem>
-                    <SelectItem value="EB3">EB3 - Skilled Workers</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 text-gray-500" />
-                  Country of Chargeability
-                </label>
-                <Select onValueChange={(value) => setFormData({...formData, country: value})}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select country" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="india">India</SelectItem>
-                    <SelectItem value="china">China</SelectItem>
-                    <SelectItem value="philippines">Philippines</SelectItem>
-                    <SelectItem value="other">Other Countries</SelectItem>
+                    {activeCategory === 'employment' ? (
+                      <>
+                        <SelectItem value="EB1">EB1 - Priority Workers</SelectItem>
+                        <SelectItem value="EB2">EB2 - Advanced Degrees</SelectItem>
+                        <SelectItem value="EB3">EB3 - Skilled Workers</SelectItem>
+                      </>
+                    ) : (
+                      <>
+                        <SelectItem value="F1">F1 - Unmarried Sons/Daughters of USC</SelectItem>
+                        <SelectItem value="F2A">F2A - Spouses/Children of LPR</SelectItem>
+                        <SelectItem value="F2B">F2B - Unmarried Sons/Daughters of LPR</SelectItem>
+                        <SelectItem value="F3">F3 - Married Sons/Daughters of USC</SelectItem>
+                        <SelectItem value="F4">F4 - Siblings of Adult USC</SelectItem>
+                      </>
+                    )}
                   </SelectContent>
                 </Select>
               </div>
