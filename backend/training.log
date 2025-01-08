@@ -1,0 +1,1859 @@
+2025-01-08 14:50:41,773 - INFO - Created training directory: data/models/20250108_145041
+2025-01-08 14:50:41,789 - INFO - 
+Training model for eb1_india
+2025-01-08 14:50:42,778 - INFO - Epoch 5: Train Loss = 211.6323, Val Loss = 1074.3674
+2025-01-08 14:50:43,174 - INFO - Epoch 10: Train Loss = 171.7901, Val Loss = 830.9031
+2025-01-08 14:50:43,564 - INFO - Epoch 15: Train Loss = 140.7987, Val Loss = 932.1781
+2025-01-08 14:50:43,941 - INFO - Epoch 20: Train Loss = 102.4886, Val Loss = 1286.2687
+2025-01-08 14:50:44,336 - INFO - Epoch 25: Train Loss = 88.2167, Val Loss = 1215.0629
+2025-01-08 14:50:44,725 - INFO - Early stopping at epoch 30
+2025-01-08 14:50:45,000 - INFO - Training plot saved to data/models/20250108_145041/plots/eb1_india_training_history.png
+2025-01-08 14:50:45,004 - INFO - Model saved to data/models/20250108_145041/checkpoints/eb1_india_model.pt
+2025-01-08 14:50:45,010 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 14:50:45,011 - INFO - mse: 1214.7810
+2025-01-08 14:50:45,011 - INFO - rmse: 34.8537
+2025-01-08 14:50:45,011 - INFO - mae: 24.6076
+2025-01-08 14:50:45,011 - INFO - max_error: 104.9873
+2025-01-08 14:50:45,011 - INFO - r2: -0.1649
+2025-01-08 14:50:45,011 - INFO - 
+Training model for eb2_india
+2025-01-08 14:50:45,428 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:45,825 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:46,220 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:46,600 - INFO - Early stopping at epoch 20
+2025-01-08 14:50:46,600 - ERROR - Error training eb2_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:50:46,600 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 215, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 159, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 364, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:50:46,607 - INFO - 
+Training model for eb3_india
+2025-01-08 14:50:47,069 - INFO - Epoch 5: Train Loss = 751.9049, Val Loss = 952.9156
+2025-01-08 14:50:47,454 - INFO - Epoch 10: Train Loss = 686.6310, Val Loss = 900.3544
+2025-01-08 14:50:47,835 - INFO - Epoch 15: Train Loss = 650.7487, Val Loss = 926.7524
+2025-01-08 14:50:48,272 - INFO - Epoch 20: Train Loss = 613.3747, Val Loss = 889.8845
+2025-01-08 14:50:48,657 - INFO - Epoch 25: Train Loss = 600.6065, Val Loss = 900.4047
+2025-01-08 14:50:49,030 - INFO - Epoch 30: Train Loss = 557.3869, Val Loss = 999.8680
+2025-01-08 14:50:49,388 - INFO - Early stopping at epoch 34
+2025-01-08 14:50:49,534 - INFO - Training plot saved to data/models/20250108_145041/plots/eb3_india_training_history.png
+2025-01-08 14:50:49,538 - INFO - Model saved to data/models/20250108_145041/checkpoints/eb3_india_model.pt
+2025-01-08 14:50:49,546 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 14:50:49,546 - INFO - mse: 990.3694
+2025-01-08 14:50:49,546 - INFO - rmse: 31.4701
+2025-01-08 14:50:49,546 - INFO - mae: 24.4373
+2025-01-08 14:50:49,546 - INFO - max_error: 79.3768
+2025-01-08 14:50:49,546 - INFO - r2: -0.2592
+2025-01-08 14:50:49,546 - INFO - 
+Training model for f1_india
+2025-01-08 14:50:49,723 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:49,885 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:50,045 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:50,211 - INFO - Early stopping at epoch 20
+2025-01-08 14:50:50,211 - ERROR - Error training f1_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:50:50,211 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 215, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 159, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 364, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:50:50,211 - INFO - 
+Training model for f2a_india
+2025-01-08 14:50:50,383 - INFO - Epoch 5: Train Loss = 1317.3175, Val Loss = 669.9014
+2025-01-08 14:50:50,562 - INFO - Epoch 10: Train Loss = 1227.3045, Val Loss = 652.8554
+2025-01-08 14:50:50,747 - INFO - Epoch 15: Train Loss = 1152.5706, Val Loss = 614.8073
+2025-01-08 14:50:50,927 - INFO - Epoch 20: Train Loss = 1054.1646, Val Loss = 716.0031
+2025-01-08 14:50:51,103 - INFO - Epoch 25: Train Loss = 987.5887, Val Loss = 732.9818
+2025-01-08 14:50:51,276 - INFO - Epoch 30: Train Loss = 926.8770, Val Loss = 883.5891
+2025-01-08 14:50:51,407 - INFO - Early stopping at epoch 34
+2025-01-08 14:50:51,548 - INFO - Training plot saved to data/models/20250108_145041/plots/f2a_india_training_history.png
+2025-01-08 14:50:51,550 - INFO - Model saved to data/models/20250108_145041/checkpoints/f2a_india_model.pt
+2025-01-08 14:50:51,554 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 14:50:51,554 - INFO - mse: 1144.9167
+2025-01-08 14:50:51,554 - INFO - rmse: 33.8366
+2025-01-08 14:50:51,554 - INFO - mae: 30.5333
+2025-01-08 14:50:51,554 - INFO - max_error: 70.5524
+2025-01-08 14:50:51,554 - INFO - r2: -0.9914
+2025-01-08 14:50:51,554 - INFO - 
+Training model for f2b_india
+2025-01-08 14:50:51,727 - INFO - Epoch 5: Train Loss = 1126.8374, Val Loss = 391.6262
+2025-01-08 14:50:51,891 - INFO - Epoch 10: Train Loss = 1060.9791, Val Loss = 394.1708
+2025-01-08 14:50:52,059 - INFO - Epoch 15: Train Loss = 1001.8245, Val Loss = 353.0247
+2025-01-08 14:50:52,241 - INFO - Epoch 20: Train Loss = 940.0418, Val Loss = 298.8655
+2025-01-08 14:50:52,408 - INFO - Epoch 25: Train Loss = 888.8798, Val Loss = 285.9888
+2025-01-08 14:50:52,589 - INFO - Epoch 30: Train Loss = 821.3496, Val Loss = 294.2991
+2025-01-08 14:50:52,792 - INFO - Epoch 35: Train Loss = 763.0474, Val Loss = 312.7385
+2025-01-08 14:50:52,971 - INFO - Epoch 40: Train Loss = 712.9416, Val Loss = 304.6911
+2025-01-08 14:50:53,153 - INFO - Epoch 45: Train Loss = 668.1827, Val Loss = 227.5806
+2025-01-08 14:50:53,331 - INFO - Epoch 50: Train Loss = 607.6320, Val Loss = 288.3375
+2025-01-08 14:50:53,497 - INFO - Epoch 55: Train Loss = 534.7628, Val Loss = 279.5138
+2025-01-08 14:50:53,663 - INFO - Epoch 60: Train Loss = 484.2846, Val Loss = 302.8624
+2025-01-08 14:50:53,823 - INFO - Early stopping at epoch 65
+2025-01-08 14:50:53,959 - INFO - Training plot saved to data/models/20250108_145041/plots/f2b_india_training_history.png
+2025-01-08 14:50:53,961 - INFO - Model saved to data/models/20250108_145041/checkpoints/f2b_india_model.pt
+2025-01-08 14:50:53,964 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 14:50:53,964 - INFO - mse: 358.0879
+2025-01-08 14:50:53,964 - INFO - rmse: 18.9232
+2025-01-08 14:50:53,964 - INFO - mae: 12.1872
+2025-01-08 14:50:53,964 - INFO - max_error: 52.0012
+2025-01-08 14:50:53,964 - INFO - r2: 0.2193
+2025-01-08 14:50:53,964 - INFO - 
+Training model for f3_india
+2025-01-08 14:50:54,136 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:54,299 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:54,469 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 14:50:54,652 - INFO - Early stopping at epoch 20
+2025-01-08 14:50:54,652 - ERROR - Error training f3_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:50:54,652 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 215, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 159, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 364, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:50:54,653 - INFO - 
+Training model for f4_india
+2025-01-08 14:50:54,843 - INFO - Epoch 5: Train Loss = 1322.4177, Val Loss = 183.9264
+2025-01-08 14:50:55,026 - INFO - Epoch 10: Train Loss = 1274.9104, Val Loss = 191.0415
+2025-01-08 14:50:55,202 - INFO - Epoch 15: Train Loss = 1237.8103, Val Loss = 182.1624
+2025-01-08 14:50:55,370 - INFO - Epoch 20: Train Loss = 1209.5889, Val Loss = 186.8445
+2025-01-08 14:50:55,404 - INFO - Early stopping at epoch 21
+2025-01-08 14:50:55,523 - INFO - Training plot saved to data/models/20250108_145041/plots/f4_india_training_history.png
+2025-01-08 14:50:55,525 - INFO - Model saved to data/models/20250108_145041/checkpoints/f4_india_model.pt
+2025-01-08 14:50:55,528 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 14:50:55,528 - INFO - mse: 226.4204
+2025-01-08 14:50:55,528 - INFO - rmse: 15.0473
+2025-01-08 14:50:55,528 - INFO - mae: 9.5030
+2025-01-08 14:50:55,528 - INFO - max_error: 59.3617
+2025-01-08 14:50:55,528 - INFO - r2: -0.6143
+2025-01-08 14:50:55,529 - INFO - 
+Training completed successfully!
+2025-01-08 14:50:55,529 - INFO - All model artifacts saved to: data/models/20250108_145041
+2025-01-08 14:51:16,820 - INFO - Created training directory: data/models/20250108_145116
+2025-01-08 14:51:16,836 - INFO - 
+Training model for eb1_india
+2025-01-08 14:51:17,776 - INFO - Epoch 5: Train Loss = 211.6323, Val Loss = 1074.3674
+2025-01-08 14:51:18,162 - INFO - Epoch 10: Train Loss = 171.7901, Val Loss = 830.9031
+2025-01-08 14:51:18,540 - INFO - Epoch 15: Train Loss = 140.7987, Val Loss = 932.1781
+2025-01-08 14:51:18,916 - INFO - Epoch 20: Train Loss = 102.4886, Val Loss = 1286.2687
+2025-01-08 14:51:19,307 - INFO - Epoch 25: Train Loss = 88.2167, Val Loss = 1215.0629
+2025-01-08 14:51:19,690 - INFO - Early stopping at epoch 30
+2025-01-08 14:51:19,937 - INFO - Training plot saved to data/models/20250108_145116/plots/eb1_india_training_history.png
+2025-01-08 14:51:19,941 - INFO - Model saved to data/models/20250108_145116/checkpoints/eb1_india_model.pt
+2025-01-08 14:51:19,949 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 14:51:19,949 - INFO - mse: 1214.7810
+2025-01-08 14:51:19,949 - INFO - rmse: 34.8537
+2025-01-08 14:51:19,949 - INFO - mae: 24.6076
+2025-01-08 14:51:19,949 - INFO - max_error: 104.9873
+2025-01-08 14:51:19,949 - INFO - r2: -0.1649
+2025-01-08 14:51:19,949 - INFO - 
+Training model for eb2_india
+2025-01-08 14:51:20,334 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:20,718 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:21,090 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:21,498 - INFO - Early stopping at epoch 20
+2025-01-08 14:51:21,498 - ERROR - Error training eb2_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:51:21,498 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 215, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 159, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 364, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:51:21,505 - INFO - 
+Training model for eb3_india
+2025-01-08 14:51:21,952 - INFO - Epoch 5: Train Loss = 751.9049, Val Loss = 952.9156
+2025-01-08 14:51:22,364 - INFO - Epoch 10: Train Loss = 686.6310, Val Loss = 900.3544
+2025-01-08 14:51:22,743 - INFO - Epoch 15: Train Loss = 650.7487, Val Loss = 926.7524
+2025-01-08 14:51:23,148 - INFO - Epoch 20: Train Loss = 613.3747, Val Loss = 889.8845
+2025-01-08 14:51:23,590 - INFO - Epoch 25: Train Loss = 600.6065, Val Loss = 900.4047
+2025-01-08 14:51:24,007 - INFO - Epoch 30: Train Loss = 557.3869, Val Loss = 999.8680
+2025-01-08 14:51:24,322 - INFO - Early stopping at epoch 34
+2025-01-08 14:51:24,464 - INFO - Training plot saved to data/models/20250108_145116/plots/eb3_india_training_history.png
+2025-01-08 14:51:24,467 - INFO - Model saved to data/models/20250108_145116/checkpoints/eb3_india_model.pt
+2025-01-08 14:51:24,475 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 14:51:24,475 - INFO - mse: 990.3694
+2025-01-08 14:51:24,475 - INFO - rmse: 31.4701
+2025-01-08 14:51:24,475 - INFO - mae: 24.4373
+2025-01-08 14:51:24,475 - INFO - max_error: 79.3768
+2025-01-08 14:51:24,475 - INFO - r2: -0.2592
+2025-01-08 14:51:24,475 - INFO - 
+Training model for f1_india
+2025-01-08 14:51:24,691 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:24,856 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:25,023 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:25,188 - INFO - Early stopping at epoch 20
+2025-01-08 14:51:25,189 - ERROR - Error training f1_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:51:25,189 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 215, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 159, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 364, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:51:25,189 - INFO - 
+Training model for f2a_india
+2025-01-08 14:51:25,359 - INFO - Epoch 5: Train Loss = 1317.3175, Val Loss = 669.9014
+2025-01-08 14:51:25,517 - INFO - Epoch 10: Train Loss = 1227.3045, Val Loss = 652.8554
+2025-01-08 14:51:25,674 - INFO - Epoch 15: Train Loss = 1152.5706, Val Loss = 614.8073
+2025-01-08 14:51:25,842 - INFO - Epoch 20: Train Loss = 1054.1646, Val Loss = 716.0031
+2025-01-08 14:51:26,001 - INFO - Epoch 25: Train Loss = 987.5887, Val Loss = 732.9818
+2025-01-08 14:51:26,163 - INFO - Epoch 30: Train Loss = 926.8770, Val Loss = 883.5891
+2025-01-08 14:51:26,293 - INFO - Early stopping at epoch 34
+2025-01-08 14:51:26,433 - INFO - Training plot saved to data/models/20250108_145116/plots/f2a_india_training_history.png
+2025-01-08 14:51:26,434 - INFO - Model saved to data/models/20250108_145116/checkpoints/f2a_india_model.pt
+2025-01-08 14:51:26,437 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 14:51:26,437 - INFO - mse: 1144.9167
+2025-01-08 14:51:26,437 - INFO - rmse: 33.8366
+2025-01-08 14:51:26,438 - INFO - mae: 30.5333
+2025-01-08 14:51:26,438 - INFO - max_error: 70.5524
+2025-01-08 14:51:26,438 - INFO - r2: -0.9914
+2025-01-08 14:51:26,438 - INFO - 
+Training model for f2b_india
+2025-01-08 14:51:26,603 - INFO - Epoch 5: Train Loss = 1126.8374, Val Loss = 391.6262
+2025-01-08 14:51:26,764 - INFO - Epoch 10: Train Loss = 1060.9791, Val Loss = 394.1708
+2025-01-08 14:51:26,935 - INFO - Epoch 15: Train Loss = 1001.8245, Val Loss = 353.0247
+2025-01-08 14:51:27,099 - INFO - Epoch 20: Train Loss = 940.0418, Val Loss = 298.8655
+2025-01-08 14:51:27,271 - INFO - Epoch 25: Train Loss = 888.8798, Val Loss = 285.9888
+2025-01-08 14:51:27,442 - INFO - Epoch 30: Train Loss = 821.3496, Val Loss = 294.2991
+2025-01-08 14:51:27,606 - INFO - Epoch 35: Train Loss = 763.0474, Val Loss = 312.7385
+2025-01-08 14:51:27,772 - INFO - Epoch 40: Train Loss = 712.9416, Val Loss = 304.6911
+2025-01-08 14:51:27,932 - INFO - Epoch 45: Train Loss = 668.1827, Val Loss = 227.5806
+2025-01-08 14:51:28,095 - INFO - Epoch 50: Train Loss = 607.6320, Val Loss = 288.3375
+2025-01-08 14:51:28,256 - INFO - Epoch 55: Train Loss = 534.7628, Val Loss = 279.5138
+2025-01-08 14:51:28,418 - INFO - Epoch 60: Train Loss = 484.2846, Val Loss = 302.8624
+2025-01-08 14:51:28,583 - INFO - Early stopping at epoch 65
+2025-01-08 14:51:28,726 - INFO - Training plot saved to data/models/20250108_145116/plots/f2b_india_training_history.png
+2025-01-08 14:51:28,728 - INFO - Model saved to data/models/20250108_145116/checkpoints/f2b_india_model.pt
+2025-01-08 14:51:28,732 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 14:51:28,732 - INFO - mse: 358.0879
+2025-01-08 14:51:28,732 - INFO - rmse: 18.9232
+2025-01-08 14:51:28,732 - INFO - mae: 12.1872
+2025-01-08 14:51:28,732 - INFO - max_error: 52.0012
+2025-01-08 14:51:28,732 - INFO - r2: 0.2193
+2025-01-08 14:51:28,732 - INFO - 
+Training model for f3_india
+2025-01-08 14:51:28,913 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:29,095 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:29,272 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 14:51:29,445 - INFO - Early stopping at epoch 20
+2025-01-08 14:51:29,445 - ERROR - Error training f3_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:51:29,446 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 215, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 159, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 364, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:51:29,446 - INFO - 
+Training model for f4_india
+2025-01-08 14:51:29,630 - INFO - Epoch 5: Train Loss = 1322.4177, Val Loss = 183.9264
+2025-01-08 14:51:29,795 - INFO - Epoch 10: Train Loss = 1274.9104, Val Loss = 191.0415
+2025-01-08 14:51:29,956 - INFO - Epoch 15: Train Loss = 1237.8103, Val Loss = 182.1624
+2025-01-08 14:51:30,115 - INFO - Epoch 20: Train Loss = 1209.5889, Val Loss = 186.8445
+2025-01-08 14:51:30,148 - INFO - Early stopping at epoch 21
+2025-01-08 14:51:30,264 - INFO - Training plot saved to data/models/20250108_145116/plots/f4_india_training_history.png
+2025-01-08 14:51:30,266 - INFO - Model saved to data/models/20250108_145116/checkpoints/f4_india_model.pt
+2025-01-08 14:51:30,269 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 14:51:30,269 - INFO - mse: 226.4204
+2025-01-08 14:51:30,269 - INFO - rmse: 15.0473
+2025-01-08 14:51:30,269 - INFO - mae: 9.5030
+2025-01-08 14:51:30,269 - INFO - max_error: 59.3617
+2025-01-08 14:51:30,269 - INFO - r2: -0.6143
+2025-01-08 14:51:30,269 - INFO - 
+Training completed successfully!
+2025-01-08 14:51:30,269 - INFO - All model artifacts saved to: data/models/20250108_145116
+2025-01-08 14:57:10,396 - INFO - Created training directory: data/models/20250108_145710
+2025-01-08 14:57:10,414 - INFO - 
+Training model for eb1_india
+2025-01-08 14:57:11,069 - INFO - Epoch 5: Train Loss = 62.3569, Val Loss = 257.3666
+2025-01-08 14:57:11,121 - INFO - Epoch 10: Train Loss = 58.6041, Val Loss = 246.3207
+2025-01-08 14:57:11,176 - INFO - Epoch 15: Train Loss = 57.5727, Val Loss = 236.9840
+2025-01-08 14:57:11,227 - INFO - Epoch 20: Train Loss = 55.2727, Val Loss = 232.0565
+2025-01-08 14:57:11,277 - INFO - Epoch 25: Train Loss = 54.1141, Val Loss = 225.6909
+2025-01-08 14:57:11,328 - INFO - Epoch 30: Train Loss = 52.3174, Val Loss = 220.6465
+2025-01-08 14:57:11,377 - INFO - Epoch 35: Train Loss = 49.6615, Val Loss = 216.6348
+2025-01-08 14:57:11,425 - INFO - Epoch 40: Train Loss = 48.0257, Val Loss = 212.3769
+2025-01-08 14:57:11,477 - INFO - Epoch 45: Train Loss = 47.1241, Val Loss = 209.2440
+2025-01-08 14:57:11,526 - INFO - Epoch 50: Train Loss = 45.5133, Val Loss = 207.0608
+2025-01-08 14:57:11,577 - INFO - Epoch 55: Train Loss = 44.3790, Val Loss = 205.1794
+2025-01-08 14:57:11,628 - INFO - Epoch 60: Train Loss = 42.5215, Val Loss = 203.4738
+2025-01-08 14:57:11,680 - INFO - Epoch 65: Train Loss = 40.3177, Val Loss = 201.8214
+2025-01-08 14:57:11,731 - INFO - Epoch 70: Train Loss = 41.6983, Val Loss = 200.8854
+2025-01-08 14:57:11,782 - INFO - Epoch 75: Train Loss = 40.9211, Val Loss = 201.0758
+2025-01-08 14:57:11,833 - INFO - Epoch 80: Train Loss = 38.7585, Val Loss = 202.1022
+2025-01-08 14:57:11,853 - INFO - Early stopping at epoch 82
+2025-01-08 14:57:12,070 - INFO - Training plot saved to data/models/20250108_145710/plots/eb1_india_training_history.png
+2025-01-08 14:57:12,071 - INFO - Model saved to data/models/20250108_145710/checkpoints/eb1_india_model.pt
+2025-01-08 14:57:12,094 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 14:57:12,094 - INFO - mse: 216.6850
+2025-01-08 14:57:12,094 - INFO - rmse: 14.7202
+2025-01-08 14:57:12,095 - INFO - mae: 11.1547
+2025-01-08 14:57:12,095 - INFO - max_error: 40.0606
+2025-01-08 14:57:12,095 - INFO - r2: 0.1759
+2025-01-08 14:57:12,129 - INFO - 
+Training model for eb2_india
+2025-01-08 14:57:12,185 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:57:12,238 - INFO - Early stopping at epoch 10
+2025-01-08 14:57:12,239 - ERROR - Error training eb2_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:12,239 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 186, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 130, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 265, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:12,245 - INFO - 
+Training model for eb3_india
+2025-01-08 14:57:12,303 - INFO - Epoch 5: Train Loss = 285.3315, Val Loss = 308.2878
+2025-01-08 14:57:12,354 - INFO - Epoch 10: Train Loss = 253.2805, Val Loss = 278.1155
+2025-01-08 14:57:12,405 - INFO - Epoch 15: Train Loss = 212.8977, Val Loss = 250.0352
+2025-01-08 14:57:12,456 - INFO - Epoch 20: Train Loss = 188.6741, Val Loss = 239.4795
+2025-01-08 14:57:12,509 - INFO - Epoch 25: Train Loss = 177.0833, Val Loss = 236.5491
+2025-01-08 14:57:12,560 - INFO - Epoch 30: Train Loss = 164.4617, Val Loss = 236.6665
+2025-01-08 14:57:12,609 - INFO - Epoch 35: Train Loss = 160.6990, Val Loss = 239.2759
+2025-01-08 14:57:12,642 - INFO - Early stopping at epoch 38
+2025-01-08 14:57:12,772 - INFO - Training plot saved to data/models/20250108_145710/plots/eb3_india_training_history.png
+2025-01-08 14:57:12,772 - INFO - Model saved to data/models/20250108_145710/checkpoints/eb3_india_model.pt
+2025-01-08 14:57:12,795 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 14:57:12,795 - INFO - mse: 275.6722
+2025-01-08 14:57:12,795 - INFO - rmse: 16.6034
+2025-01-08 14:57:12,795 - INFO - mae: 14.1057
+2025-01-08 14:57:12,795 - INFO - max_error: 41.1443
+2025-01-08 14:57:12,795 - INFO - r2: -0.0147
+2025-01-08 14:57:12,833 - INFO - 
+Training model for f1_india
+2025-01-08 14:57:12,888 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:57:12,940 - INFO - Early stopping at epoch 10
+2025-01-08 14:57:12,940 - ERROR - Error training f1_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:12,940 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 186, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 130, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 265, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:12,941 - INFO - 
+Training model for f2a_india
+2025-01-08 14:57:12,996 - INFO - Epoch 5: Train Loss = 623.2503, Val Loss = 190.5693
+2025-01-08 14:57:13,044 - INFO - Epoch 10: Train Loss = 559.9667, Val Loss = 172.8940
+2025-01-08 14:57:13,093 - INFO - Epoch 15: Train Loss = 438.5226, Val Loss = 145.7648
+2025-01-08 14:57:13,142 - INFO - Epoch 20: Train Loss = 359.9368, Val Loss = 131.0665
+2025-01-08 14:57:13,192 - INFO - Epoch 25: Train Loss = 309.8069, Val Loss = 124.2235
+2025-01-08 14:57:13,241 - INFO - Epoch 30: Train Loss = 273.3656, Val Loss = 121.2045
+2025-01-08 14:57:13,290 - INFO - Epoch 35: Train Loss = 244.5865, Val Loss = 120.9746
+2025-01-08 14:57:13,340 - INFO - Epoch 40: Train Loss = 221.8355, Val Loss = 122.7958
+2025-01-08 14:57:13,369 - INFO - Early stopping at epoch 43
+2025-01-08 14:57:13,490 - INFO - Training plot saved to data/models/20250108_145710/plots/f2a_india_training_history.png
+2025-01-08 14:57:13,490 - INFO - Model saved to data/models/20250108_145710/checkpoints/f2a_india_model.pt
+2025-01-08 14:57:13,512 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 14:57:13,512 - INFO - mse: 111.6825
+2025-01-08 14:57:13,512 - INFO - rmse: 10.5680
+2025-01-08 14:57:13,512 - INFO - mae: 7.4399
+2025-01-08 14:57:13,512 - INFO - max_error: 45.0739
+2025-01-08 14:57:13,512 - INFO - r2: 0.3526
+2025-01-08 14:57:13,551 - INFO - 
+Training model for f2b_india
+2025-01-08 14:57:13,607 - INFO - Epoch 5: Train Loss = 566.6270, Val Loss = 246.1934
+2025-01-08 14:57:13,657 - INFO - Epoch 10: Train Loss = 500.7906, Val Loss = 215.4998
+2025-01-08 14:57:13,707 - INFO - Epoch 15: Train Loss = 398.8806, Val Loss = 182.1112
+2025-01-08 14:57:13,757 - INFO - Epoch 20: Train Loss = 322.1221, Val Loss = 174.7436
+2025-01-08 14:57:13,807 - INFO - Epoch 25: Train Loss = 276.0897, Val Loss = 179.3022
+2025-01-08 14:57:13,855 - INFO - Early stopping at epoch 30
+2025-01-08 14:57:13,981 - INFO - Training plot saved to data/models/20250108_145710/plots/f2b_india_training_history.png
+2025-01-08 14:57:13,982 - INFO - Model saved to data/models/20250108_145710/checkpoints/f2b_india_model.pt
+2025-01-08 14:57:14,005 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 14:57:14,005 - INFO - mse: 188.7634
+2025-01-08 14:57:14,005 - INFO - rmse: 13.7391
+2025-01-08 14:57:14,005 - INFO - mae: 12.5366
+2025-01-08 14:57:14,005 - INFO - max_error: 40.7919
+2025-01-08 14:57:14,005 - INFO - r2: -0.0102
+2025-01-08 14:57:14,045 - INFO - 
+Training model for f3_india
+2025-01-08 14:57:14,102 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:57:14,152 - INFO - Early stopping at epoch 10
+2025-01-08 14:57:14,152 - ERROR - Error training f3_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:14,152 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 186, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 130, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 265, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:14,152 - INFO - 
+Training model for f4_india
+2025-01-08 14:57:14,219 - INFO - Epoch 5: Train Loss = 594.0240, Val Loss = 150.2045
+2025-01-08 14:57:14,268 - INFO - Epoch 10: Train Loss = 525.2891, Val Loss = 128.2553
+2025-01-08 14:57:14,318 - INFO - Epoch 15: Train Loss = 418.6815, Val Loss = 101.2893
+2025-01-08 14:57:14,366 - INFO - Epoch 20: Train Loss = 348.8797, Val Loss = 97.2558
+2025-01-08 14:57:14,416 - INFO - Epoch 25: Train Loss = 310.2071, Val Loss = 103.3687
+2025-01-08 14:57:14,458 - INFO - Early stopping at epoch 29
+2025-01-08 14:57:14,578 - INFO - Training plot saved to data/models/20250108_145710/plots/f4_india_training_history.png
+2025-01-08 14:57:14,579 - INFO - Model saved to data/models/20250108_145710/checkpoints/f4_india_model.pt
+2025-01-08 14:57:14,605 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 14:57:14,605 - INFO - mse: 101.2096
+2025-01-08 14:57:14,605 - INFO - rmse: 10.0603
+2025-01-08 14:57:14,605 - INFO - mae: 9.0693
+2025-01-08 14:57:14,605 - INFO - max_error: 19.2929
+2025-01-08 14:57:14,605 - INFO - r2: -0.1147
+2025-01-08 14:57:14,692 - INFO - 
+Training completed successfully!
+2025-01-08 14:57:14,692 - INFO - All model artifacts saved to: data/models/20250108_145710
+2025-01-08 14:57:41,166 - INFO - Created training directory: data/models/20250108_145741
+2025-01-08 14:57:41,182 - INFO - 
+Training model for eb1_india
+2025-01-08 14:57:41,770 - INFO - Epoch 5: Train Loss = 62.3569, Val Loss = 257.3666
+2025-01-08 14:57:41,843 - INFO - Epoch 10: Train Loss = 58.6041, Val Loss = 246.3207
+2025-01-08 14:57:41,894 - INFO - Epoch 15: Train Loss = 57.5727, Val Loss = 236.9840
+2025-01-08 14:57:41,947 - INFO - Epoch 20: Train Loss = 55.2727, Val Loss = 232.0565
+2025-01-08 14:57:41,997 - INFO - Epoch 25: Train Loss = 54.1141, Val Loss = 225.6909
+2025-01-08 14:57:42,048 - INFO - Epoch 30: Train Loss = 52.3174, Val Loss = 220.6465
+2025-01-08 14:57:42,100 - INFO - Epoch 35: Train Loss = 49.6615, Val Loss = 216.6348
+2025-01-08 14:57:42,151 - INFO - Epoch 40: Train Loss = 48.0257, Val Loss = 212.3769
+2025-01-08 14:57:42,203 - INFO - Epoch 45: Train Loss = 47.1241, Val Loss = 209.2440
+2025-01-08 14:57:42,254 - INFO - Epoch 50: Train Loss = 45.5133, Val Loss = 207.0608
+2025-01-08 14:57:42,306 - INFO - Epoch 55: Train Loss = 44.3790, Val Loss = 205.1794
+2025-01-08 14:57:42,356 - INFO - Epoch 60: Train Loss = 42.5215, Val Loss = 203.4738
+2025-01-08 14:57:42,408 - INFO - Epoch 65: Train Loss = 40.3177, Val Loss = 201.8214
+2025-01-08 14:57:42,459 - INFO - Epoch 70: Train Loss = 41.6983, Val Loss = 200.8854
+2025-01-08 14:57:42,510 - INFO - Epoch 75: Train Loss = 40.9211, Val Loss = 201.0758
+2025-01-08 14:57:42,560 - INFO - Epoch 80: Train Loss = 38.7585, Val Loss = 202.1022
+2025-01-08 14:57:42,581 - INFO - Early stopping at epoch 82
+2025-01-08 14:57:42,790 - INFO - Training plot saved to data/models/20250108_145741/plots/eb1_india_training_history.png
+2025-01-08 14:57:42,791 - INFO - Model saved to data/models/20250108_145741/checkpoints/eb1_india_model.pt
+2025-01-08 14:57:42,815 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 14:57:42,815 - INFO - mse: 216.6850
+2025-01-08 14:57:42,815 - INFO - rmse: 14.7202
+2025-01-08 14:57:42,815 - INFO - mae: 11.1547
+2025-01-08 14:57:42,815 - INFO - max_error: 40.0606
+2025-01-08 14:57:42,815 - INFO - r2: 0.1759
+2025-01-08 14:57:42,849 - INFO - 
+Training model for eb2_india
+2025-01-08 14:57:42,908 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:57:42,959 - INFO - Early stopping at epoch 10
+2025-01-08 14:57:42,959 - ERROR - Error training eb2_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:42,960 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 186, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 130, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 265, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:42,966 - INFO - 
+Training model for eb3_india
+2025-01-08 14:57:43,021 - INFO - Epoch 5: Train Loss = 285.3315, Val Loss = 308.2878
+2025-01-08 14:57:43,072 - INFO - Epoch 10: Train Loss = 253.2805, Val Loss = 278.1155
+2025-01-08 14:57:43,122 - INFO - Epoch 15: Train Loss = 212.8977, Val Loss = 250.0352
+2025-01-08 14:57:43,171 - INFO - Epoch 20: Train Loss = 188.6741, Val Loss = 239.4795
+2025-01-08 14:57:43,221 - INFO - Epoch 25: Train Loss = 177.0833, Val Loss = 236.5491
+2025-01-08 14:57:43,270 - INFO - Epoch 30: Train Loss = 164.4617, Val Loss = 236.6665
+2025-01-08 14:57:43,321 - INFO - Epoch 35: Train Loss = 160.6990, Val Loss = 239.2759
+2025-01-08 14:57:43,352 - INFO - Early stopping at epoch 38
+2025-01-08 14:57:43,483 - INFO - Training plot saved to data/models/20250108_145741/plots/eb3_india_training_history.png
+2025-01-08 14:57:43,483 - INFO - Model saved to data/models/20250108_145741/checkpoints/eb3_india_model.pt
+2025-01-08 14:57:43,506 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 14:57:43,506 - INFO - mse: 275.6722
+2025-01-08 14:57:43,506 - INFO - rmse: 16.6034
+2025-01-08 14:57:43,506 - INFO - mae: 14.1057
+2025-01-08 14:57:43,506 - INFO - max_error: 41.1443
+2025-01-08 14:57:43,506 - INFO - r2: -0.0147
+2025-01-08 14:57:43,543 - INFO - 
+Training model for f1_india
+2025-01-08 14:57:43,600 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:57:43,649 - INFO - Early stopping at epoch 10
+2025-01-08 14:57:43,649 - ERROR - Error training f1_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:43,649 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 186, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 130, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 265, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:43,650 - INFO - 
+Training model for f2a_india
+2025-01-08 14:57:43,705 - INFO - Epoch 5: Train Loss = 623.2503, Val Loss = 190.5693
+2025-01-08 14:57:43,754 - INFO - Epoch 10: Train Loss = 559.9667, Val Loss = 172.8940
+2025-01-08 14:57:43,805 - INFO - Epoch 15: Train Loss = 438.5226, Val Loss = 145.7648
+2025-01-08 14:57:43,856 - INFO - Epoch 20: Train Loss = 359.9368, Val Loss = 131.0665
+2025-01-08 14:57:43,906 - INFO - Epoch 25: Train Loss = 309.8069, Val Loss = 124.2235
+2025-01-08 14:57:43,955 - INFO - Epoch 30: Train Loss = 273.3656, Val Loss = 121.2045
+2025-01-08 14:57:44,004 - INFO - Epoch 35: Train Loss = 244.5865, Val Loss = 120.9746
+2025-01-08 14:57:44,054 - INFO - Epoch 40: Train Loss = 221.8355, Val Loss = 122.7958
+2025-01-08 14:57:44,084 - INFO - Early stopping at epoch 43
+2025-01-08 14:57:44,206 - INFO - Training plot saved to data/models/20250108_145741/plots/f2a_india_training_history.png
+2025-01-08 14:57:44,206 - INFO - Model saved to data/models/20250108_145741/checkpoints/f2a_india_model.pt
+2025-01-08 14:57:44,229 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 14:57:44,229 - INFO - mse: 111.6825
+2025-01-08 14:57:44,229 - INFO - rmse: 10.5680
+2025-01-08 14:57:44,229 - INFO - mae: 7.4399
+2025-01-08 14:57:44,229 - INFO - max_error: 45.0739
+2025-01-08 14:57:44,229 - INFO - r2: 0.3526
+2025-01-08 14:57:44,265 - INFO - 
+Training model for f2b_india
+2025-01-08 14:57:44,320 - INFO - Epoch 5: Train Loss = 566.6270, Val Loss = 246.1934
+2025-01-08 14:57:44,370 - INFO - Epoch 10: Train Loss = 500.7906, Val Loss = 215.4998
+2025-01-08 14:57:44,419 - INFO - Epoch 15: Train Loss = 398.8806, Val Loss = 182.1112
+2025-01-08 14:57:44,469 - INFO - Epoch 20: Train Loss = 322.1221, Val Loss = 174.7436
+2025-01-08 14:57:44,518 - INFO - Epoch 25: Train Loss = 276.0897, Val Loss = 179.3022
+2025-01-08 14:57:44,566 - INFO - Early stopping at epoch 30
+2025-01-08 14:57:44,690 - INFO - Training plot saved to data/models/20250108_145741/plots/f2b_india_training_history.png
+2025-01-08 14:57:44,691 - INFO - Model saved to data/models/20250108_145741/checkpoints/f2b_india_model.pt
+2025-01-08 14:57:44,714 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 14:57:44,714 - INFO - mse: 188.7634
+2025-01-08 14:57:44,714 - INFO - rmse: 13.7391
+2025-01-08 14:57:44,714 - INFO - mae: 12.5366
+2025-01-08 14:57:44,714 - INFO - max_error: 40.7919
+2025-01-08 14:57:44,714 - INFO - r2: -0.0102
+2025-01-08 14:57:44,754 - INFO - 
+Training model for f3_india
+2025-01-08 14:57:44,810 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 14:57:44,859 - INFO - Early stopping at epoch 10
+2025-01-08 14:57:44,861 - ERROR - Error training f3_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:44,861 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 186, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 130, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 265, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 14:57:44,861 - INFO - 
+Training model for f4_india
+2025-01-08 14:57:44,918 - INFO - Epoch 5: Train Loss = 594.0240, Val Loss = 150.2045
+2025-01-08 14:57:44,976 - INFO - Epoch 10: Train Loss = 525.2891, Val Loss = 128.2553
+2025-01-08 14:57:45,028 - INFO - Epoch 15: Train Loss = 418.6815, Val Loss = 101.2893
+2025-01-08 14:57:45,096 - INFO - Epoch 20: Train Loss = 348.8797, Val Loss = 97.2558
+2025-01-08 14:57:45,147 - INFO - Epoch 25: Train Loss = 310.2071, Val Loss = 103.3687
+2025-01-08 14:57:45,187 - INFO - Early stopping at epoch 29
+2025-01-08 14:57:45,302 - INFO - Training plot saved to data/models/20250108_145741/plots/f4_india_training_history.png
+2025-01-08 14:57:45,303 - INFO - Model saved to data/models/20250108_145741/checkpoints/f4_india_model.pt
+2025-01-08 14:57:45,326 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 14:57:45,326 - INFO - mse: 101.2096
+2025-01-08 14:57:45,326 - INFO - rmse: 10.0603
+2025-01-08 14:57:45,326 - INFO - mae: 9.0693
+2025-01-08 14:57:45,326 - INFO - max_error: 19.2929
+2025-01-08 14:57:45,326 - INFO - r2: -0.1147
+2025-01-08 14:57:45,404 - INFO - 
+Training completed successfully!
+2025-01-08 14:57:45,404 - INFO - All model artifacts saved to: data/models/20250108_145741
+2025-01-08 15:06:52,514 - INFO - Created training directory: data/models/20250108_150652
+2025-01-08 15:06:52,514 - INFO - Models will be saved to: data/models/20250108_150652
+2025-01-08 15:06:52,514 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:06:52,530 - INFO - 
+Training model for eb1_india
+2025-01-08 15:06:53,133 - INFO - Epoch 5: Train Loss = 61.6893, Val Loss = 255.9871
+2025-01-08 15:06:53,183 - INFO - Epoch 10: Train Loss = 59.5723, Val Loss = 243.6044
+2025-01-08 15:06:53,233 - INFO - Epoch 15: Train Loss = 56.3749, Val Loss = 233.5973
+2025-01-08 15:06:53,284 - INFO - Epoch 20: Train Loss = 53.2633, Val Loss = 223.2740
+2025-01-08 15:06:53,334 - INFO - Epoch 25: Train Loss = 52.7917, Val Loss = 216.5667
+2025-01-08 15:06:53,385 - INFO - Epoch 30: Train Loss = 49.7219, Val Loss = 208.8291
+2025-01-08 15:06:53,436 - INFO - Epoch 35: Train Loss = 48.2283, Val Loss = 202.8127
+2025-01-08 15:06:53,486 - INFO - Epoch 40: Train Loss = 46.1378, Val Loss = 198.2249
+2025-01-08 15:06:53,536 - INFO - Epoch 45: Train Loss = 44.3770, Val Loss = 193.5801
+2025-01-08 15:06:53,587 - INFO - Epoch 50: Train Loss = 42.6524, Val Loss = 190.3221
+2025-01-08 15:06:53,638 - INFO - Epoch 55: Train Loss = 41.1902, Val Loss = 187.9848
+2025-01-08 15:06:53,688 - INFO - Epoch 60: Train Loss = 41.0117, Val Loss = 185.6628
+2025-01-08 15:06:53,737 - INFO - Epoch 65: Train Loss = 39.2333, Val Loss = 184.0578
+2025-01-08 15:06:53,787 - INFO - Epoch 70: Train Loss = 38.3753, Val Loss = 182.9637
+2025-01-08 15:06:53,837 - INFO - Epoch 75: Train Loss = 36.7996, Val Loss = 181.6922
+2025-01-08 15:06:53,886 - INFO - Epoch 80: Train Loss = 35.8486, Val Loss = 180.8998
+2025-01-08 15:06:53,936 - INFO - Epoch 85: Train Loss = 35.3311, Val Loss = 180.9080
+2025-01-08 15:06:53,984 - INFO - Epoch 90: Train Loss = 32.0520, Val Loss = 181.4039
+2025-01-08 15:06:54,034 - INFO - Epoch 95: Train Loss = 32.8428, Val Loss = 182.4359
+2025-01-08 15:06:54,083 - INFO - Epoch 100: Train Loss = 32.3148, Val Loss = 182.5908
+2025-01-08 15:06:54,314 - INFO - Training plot saved to data/models/20250108_150652/plots/eb1_india_training_history.png
+2025-01-08 15:06:54,315 - INFO - Model saved to data/models/20250108_150652/checkpoints/eb1_india_model.pt
+2025-01-08 15:06:54,317 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 15:06:54,317 - INFO - mse: 181.6696
+2025-01-08 15:06:54,317 - INFO - rmse: 13.4785
+2025-01-08 15:06:54,317 - INFO - mae: 10.3241
+2025-01-08 15:06:54,317 - INFO - max_error: 37.0432
+2025-01-08 15:06:54,317 - INFO - r2: 0.3090
+2025-01-08 15:06:54,361 - INFO - 
+Training model for eb2_india
+2025-01-08 15:06:54,421 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:54,473 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:54,523 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:54,574 - INFO - Early stopping at epoch 20
+2025-01-08 15:06:54,574 - ERROR - Error training eb2_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:06:54,574 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 306, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:06:54,577 - INFO - 
+Training model for eb3_india
+2025-01-08 15:06:54,636 - INFO - Epoch 5: Train Loss = 278.9294, Val Loss = 301.3347
+2025-01-08 15:06:54,686 - INFO - Epoch 10: Train Loss = 246.4278, Val Loss = 271.2236
+2025-01-08 15:06:54,737 - INFO - Epoch 15: Train Loss = 208.7815, Val Loss = 245.0335
+2025-01-08 15:06:54,807 - INFO - Epoch 20: Train Loss = 188.1652, Val Loss = 232.7407
+2025-01-08 15:06:54,859 - INFO - Epoch 25: Train Loss = 172.8529, Val Loss = 226.7624
+2025-01-08 15:06:54,912 - INFO - Epoch 30: Train Loss = 163.5956, Val Loss = 223.6138
+2025-01-08 15:06:54,965 - INFO - Epoch 35: Train Loss = 157.2725, Val Loss = 223.7431
+2025-01-08 15:06:55,015 - INFO - Epoch 40: Train Loss = 152.3586, Val Loss = 224.3763
+2025-01-08 15:06:55,066 - INFO - Epoch 45: Train Loss = 147.6877, Val Loss = 224.9692
+2025-01-08 15:06:55,117 - INFO - Epoch 50: Train Loss = 148.8713, Val Loss = 225.6780
+2025-01-08 15:06:55,128 - INFO - Early stopping at epoch 51
+2025-01-08 15:06:55,324 - INFO - Training plot saved to data/models/20250108_150652/plots/eb3_india_training_history.png
+2025-01-08 15:06:55,324 - INFO - Model saved to data/models/20250108_150652/checkpoints/eb3_india_model.pt
+2025-01-08 15:06:55,325 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 15:06:55,325 - INFO - mse: 256.0294
+2025-01-08 15:06:55,325 - INFO - rmse: 16.0009
+2025-01-08 15:06:55,326 - INFO - mae: 13.6161
+2025-01-08 15:06:55,326 - INFO - max_error: 41.5199
+2025-01-08 15:06:55,326 - INFO - r2: 0.0576
+2025-01-08 15:06:55,366 - INFO - 
+Training model for f1_india
+2025-01-08 15:06:55,425 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:55,477 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:55,527 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:55,577 - INFO - Early stopping at epoch 20
+2025-01-08 15:06:55,577 - ERROR - Error training f1_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:06:55,577 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 306, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:06:55,577 - INFO - 
+Training model for f2a_india
+2025-01-08 15:06:55,638 - INFO - Epoch 5: Train Loss = 613.1500, Val Loss = 186.7699
+2025-01-08 15:06:55,690 - INFO - Epoch 10: Train Loss = 540.2458, Val Loss = 164.5212
+2025-01-08 15:06:55,742 - INFO - Epoch 15: Train Loss = 434.4640, Val Loss = 141.7779
+2025-01-08 15:06:55,793 - INFO - Epoch 20: Train Loss = 356.7711, Val Loss = 129.3385
+2025-01-08 15:06:55,844 - INFO - Epoch 25: Train Loss = 304.7080, Val Loss = 122.7243
+2025-01-08 15:06:55,896 - INFO - Epoch 30: Train Loss = 263.9680, Val Loss = 118.9753
+2025-01-08 15:06:55,947 - INFO - Epoch 35: Train Loss = 230.7918, Val Loss = 116.9912
+2025-01-08 15:06:55,999 - INFO - Epoch 40: Train Loss = 206.8015, Val Loss = 116.4020
+2025-01-08 15:06:56,051 - INFO - Epoch 45: Train Loss = 185.5595, Val Loss = 117.0426
+2025-01-08 15:06:56,102 - INFO - Epoch 50: Train Loss = 184.6840, Val Loss = 118.0727
+2025-01-08 15:06:56,152 - INFO - Epoch 55: Train Loss = 172.9167, Val Loss = 118.7398
+2025-01-08 15:06:56,182 - INFO - Early stopping at epoch 58
+2025-01-08 15:06:56,318 - INFO - Training plot saved to data/models/20250108_150652/plots/f2a_india_training_history.png
+2025-01-08 15:06:56,319 - INFO - Model saved to data/models/20250108_150652/checkpoints/f2a_india_model.pt
+2025-01-08 15:06:56,320 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 15:06:56,320 - INFO - mse: 99.8554
+2025-01-08 15:06:56,320 - INFO - rmse: 9.9928
+2025-01-08 15:06:56,320 - INFO - mae: 7.2937
+2025-01-08 15:06:56,320 - INFO - max_error: 33.1366
+2025-01-08 15:06:56,320 - INFO - r2: 0.4212
+2025-01-08 15:06:56,357 - INFO - 
+Training model for f2b_india
+2025-01-08 15:06:56,417 - INFO - Epoch 5: Train Loss = 563.0578, Val Loss = 244.8546
+2025-01-08 15:06:56,469 - INFO - Epoch 10: Train Loss = 499.6794, Val Loss = 216.0309
+2025-01-08 15:06:56,521 - INFO - Epoch 15: Train Loss = 396.9929, Val Loss = 182.3903
+2025-01-08 15:06:56,573 - INFO - Epoch 20: Train Loss = 323.3936, Val Loss = 172.5683
+2025-01-08 15:06:56,624 - INFO - Epoch 25: Train Loss = 278.1144, Val Loss = 175.5290
+2025-01-08 15:06:56,689 - INFO - Epoch 30: Train Loss = 253.6907, Val Loss = 180.2235
+2025-01-08 15:06:56,745 - INFO - Epoch 35: Train Loss = 239.8816, Val Loss = 183.7506
+2025-01-08 15:06:56,809 - INFO - Epoch 40: Train Loss = 232.2997, Val Loss = 185.9424
+2025-01-08 15:06:56,819 - INFO - Early stopping at epoch 41
+2025-01-08 15:06:56,965 - INFO - Training plot saved to data/models/20250108_150652/plots/f2b_india_training_history.png
+2025-01-08 15:06:56,966 - INFO - Model saved to data/models/20250108_150652/checkpoints/f2b_india_model.pt
+2025-01-08 15:06:56,967 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 15:06:56,967 - INFO - mse: 187.5671
+2025-01-08 15:06:56,967 - INFO - rmse: 13.6955
+2025-01-08 15:06:56,967 - INFO - mae: 12.6458
+2025-01-08 15:06:56,967 - INFO - max_error: 41.3569
+2025-01-08 15:06:56,967 - INFO - r2: -0.0038
+2025-01-08 15:06:57,009 - INFO - 
+Training model for f3_india
+2025-01-08 15:06:57,070 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:57,122 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:57,174 - INFO - Epoch 15: Train Loss = nan, Val Loss = nan
+2025-01-08 15:06:57,224 - INFO - Early stopping at epoch 20
+2025-01-08 15:06:57,224 - ERROR - Error training f3_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:06:57,224 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 306, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:06:57,224 - INFO - 
+Training model for f4_india
+2025-01-08 15:06:57,281 - INFO - Epoch 5: Train Loss = 587.4282, Val Loss = 145.5674
+2025-01-08 15:06:57,331 - INFO - Epoch 10: Train Loss = 537.4610, Val Loss = 128.5318
+2025-01-08 15:06:57,380 - INFO - Epoch 15: Train Loss = 436.6870, Val Loss = 104.1855
+2025-01-08 15:06:57,430 - INFO - Epoch 20: Train Loss = 361.1023, Val Loss = 95.5444
+2025-01-08 15:06:57,480 - INFO - Epoch 25: Train Loss = 313.7620, Val Loss = 100.2327
+2025-01-08 15:06:57,530 - INFO - Epoch 30: Train Loss = 291.8024, Val Loss = 105.8130
+2025-01-08 15:06:57,580 - INFO - Epoch 35: Train Loss = 280.0159, Val Loss = 109.6357
+2025-01-08 15:06:57,630 - INFO - Early stopping at epoch 40
+2025-01-08 15:06:57,769 - INFO - Training plot saved to data/models/20250108_150652/plots/f4_india_training_history.png
+2025-01-08 15:06:57,769 - INFO - Model saved to data/models/20250108_150652/checkpoints/f4_india_model.pt
+2025-01-08 15:06:57,771 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 15:06:57,771 - INFO - mse: 105.2352
+2025-01-08 15:06:57,771 - INFO - rmse: 10.2584
+2025-01-08 15:06:57,771 - INFO - mae: 9.2618
+2025-01-08 15:06:57,771 - INFO - max_error: 18.4494
+2025-01-08 15:06:57,771 - INFO - r2: -0.1590
+2025-01-08 15:06:57,855 - INFO - 
+Training completed successfully!
+2025-01-08 15:06:57,855 - INFO - All model artifacts saved to: data/models/20250108_150652
+2025-01-08 15:06:57,855 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:11:40,702 - INFO - Created training directory: data/models/20250108_151140
+2025-01-08 15:11:40,702 - INFO - Models will be saved to: data/models/20250108_151140
+2025-01-08 15:11:40,702 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:11:40,718 - INFO - 
+Training model for eb1_india
+2025-01-08 15:11:41,199 - ERROR - Error training eb1_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,199 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,199 - INFO - 
+Training model for eb2_india
+2025-01-08 15:11:41,208 - ERROR - Error training eb2_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,208 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,208 - INFO - 
+Training model for eb3_india
+2025-01-08 15:11:41,215 - ERROR - Error training eb3_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,215 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,215 - INFO - 
+Training model for f1_india
+2025-01-08 15:11:41,222 - ERROR - Error training f1_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,222 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,222 - INFO - 
+Training model for f2a_india
+2025-01-08 15:11:41,229 - ERROR - Error training f2a_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,229 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,229 - INFO - 
+Training model for f2b_india
+2025-01-08 15:11:41,236 - ERROR - Error training f2b_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,236 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,236 - INFO - 
+Training model for f3_india
+2025-01-08 15:11:41,243 - ERROR - Error training f3_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,243 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,243 - INFO - 
+Training model for f4_india
+2025-01-08 15:11:41,251 - ERROR - Error training f4_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,251 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 204, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 145, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:11:41,401 - INFO - 
+Training completed successfully!
+2025-01-08 15:11:41,401 - INFO - All model artifacts saved to: data/models/20250108_151140
+2025-01-08 15:11:41,401 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:12:35,048 - WARNING - Could not create symlink: [Errno 17] File exists: 'data/models/20250108_151235' -> 'data/models/latest'. Continuing without symlink.
+2025-01-08 15:12:35,049 - INFO - Models will be saved to: data/models/20250108_151235
+2025-01-08 15:12:35,049 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:12:35,065 - INFO - 
+Training model for eb1_india
+2025-01-08 15:12:35,546 - ERROR - Error training eb1_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,546 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,547 - INFO - 
+Training model for eb2_india
+2025-01-08 15:12:35,555 - ERROR - Error training eb2_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,555 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,555 - INFO - 
+Training model for eb3_india
+2025-01-08 15:12:35,562 - ERROR - Error training eb3_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,562 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,563 - INFO - 
+Training model for f1_india
+2025-01-08 15:12:35,570 - ERROR - Error training f1_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,570 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,570 - INFO - 
+Training model for f2a_india
+2025-01-08 15:12:35,577 - ERROR - Error training f2a_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,577 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,577 - INFO - 
+Training model for f2b_india
+2025-01-08 15:12:35,584 - ERROR - Error training f2b_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,584 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,584 - INFO - 
+Training model for f3_india
+2025-01-08 15:12:35,592 - ERROR - Error training f3_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,592 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,592 - INFO - 
+Training model for f4_india
+2025-01-08 15:12:35,599 - ERROR - Error training f4_india: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,600 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 214, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 155, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 258, in train
+    scheduler = torch.optim.ReduceLROnPlateau(
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-08 15:12:35,746 - INFO - 
+Training completed successfully!
+2025-01-08 15:12:35,746 - INFO - All model artifacts saved to: data/models/20250108_151235
+2025-01-08 15:12:35,746 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:14:57,032 - WARNING - Could not create symlink: [Errno 17] File exists: 'data/models/20250108_151457' -> 'data/models/latest'. Continuing without symlink.
+2025-01-08 15:14:57,033 - INFO - Models will be saved to: data/models/20250108_151457
+2025-01-08 15:14:57,033 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:14:57,056 - INFO - 
+Training model for eb1_india
+2025-01-08 15:14:57,703 - INFO - Epoch 5: Train Loss = 61.6893, Val Loss = 255.9871
+2025-01-08 15:14:57,758 - INFO - Epoch 10: Train Loss = 59.5723, Val Loss = 243.6044
+2025-01-08 15:14:57,812 - INFO - Epoch 15: Train Loss = 56.3749, Val Loss = 233.5973
+2025-01-08 15:14:57,864 - INFO - Epoch 20: Train Loss = 53.2633, Val Loss = 223.2740
+2025-01-08 15:14:57,917 - INFO - Epoch 25: Train Loss = 52.7917, Val Loss = 216.5667
+2025-01-08 15:14:57,969 - INFO - Epoch 30: Train Loss = 49.7219, Val Loss = 208.8291
+2025-01-08 15:14:58,021 - INFO - Epoch 35: Train Loss = 48.2283, Val Loss = 202.8127
+2025-01-08 15:14:58,074 - INFO - Epoch 40: Train Loss = 46.1378, Val Loss = 198.2249
+2025-01-08 15:14:58,125 - INFO - Epoch 45: Train Loss = 44.3770, Val Loss = 193.5801
+2025-01-08 15:14:58,180 - INFO - Epoch 50: Train Loss = 42.6524, Val Loss = 190.3221
+2025-01-08 15:14:58,231 - INFO - Epoch 55: Train Loss = 41.1902, Val Loss = 187.9848
+2025-01-08 15:14:58,284 - INFO - Epoch 60: Train Loss = 41.0117, Val Loss = 185.6628
+2025-01-08 15:14:58,337 - INFO - Epoch 65: Train Loss = 39.2333, Val Loss = 184.0578
+2025-01-08 15:14:58,390 - INFO - Epoch 70: Train Loss = 38.3753, Val Loss = 182.9637
+2025-01-08 15:14:58,441 - INFO - Epoch 75: Train Loss = 36.7996, Val Loss = 181.6922
+2025-01-08 15:14:58,493 - INFO - Epoch 80: Train Loss = 35.8486, Val Loss = 180.8998
+2025-01-08 15:14:58,544 - INFO - Epoch 85: Train Loss = 35.3311, Val Loss = 180.9080
+2025-01-08 15:14:58,595 - INFO - Epoch 90: Train Loss = 32.0520, Val Loss = 181.4039
+2025-01-08 15:14:58,647 - INFO - Epoch 95: Train Loss = 32.8428, Val Loss = 182.4359
+2025-01-08 15:14:58,697 - INFO - Epoch 100: Train Loss = 32.3148, Val Loss = 182.5908
+2025-01-08 15:14:58,924 - INFO - Training plot saved to data/models/20250108_151457/plots/eb1_india_training_history.png
+2025-01-08 15:14:58,925 - INFO - Model saved to data/models/20250108_151457/checkpoints/eb1_india_model.pt
+2025-01-08 15:14:58,926 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 15:14:58,926 - INFO - mse: 181.6696
+2025-01-08 15:14:58,926 - INFO - rmse: 13.4785
+2025-01-08 15:14:58,926 - INFO - mae: 10.3241
+2025-01-08 15:14:58,926 - INFO - max_error: 37.0432
+2025-01-08 15:14:58,926 - INFO - r2: 0.3090
+2025-01-08 15:14:58,969 - INFO - 
+Training model for eb2_india
+2025-01-08 15:14:58,986 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:58,995 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,004 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,017 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,024 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,029 - INFO - Epoch 5: Train Loss = 335.9474, Val Loss = 293.4696
+2025-01-08 15:14:59,034 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,039 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,052 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,064 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,073 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,079 - INFO - Epoch 10: Train Loss = 313.3749, Val Loss = 269.6288
+2025-01-08 15:14:59,080 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,095 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,107 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,115 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,127 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,128 - INFO - Epoch 15: Train Loss = 283.8911, Val Loss = 231.8784
+2025-01-08 15:14:59,133 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,145 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,156 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,158 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,171 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,178 - INFO - Epoch 20: Train Loss = 261.4759, Val Loss = 215.5678
+2025-01-08 15:14:59,182 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,192 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,204 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,210 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,220 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,228 - INFO - Epoch 25: Train Loss = 243.2996, Val Loss = 207.7328
+2025-01-08 15:14:59,234 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,237 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,256 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,261 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,273 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,278 - INFO - Epoch 30: Train Loss = 233.6561, Val Loss = 200.3510
+2025-01-08 15:14:59,278 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,290 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,299 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,315 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,320 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,327 - INFO - Epoch 35: Train Loss = 217.9912, Val Loss = 192.7405
+2025-01-08 15:14:59,329 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,338 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,353 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,364 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,369 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,376 - INFO - Epoch 40: Train Loss = 209.2558, Val Loss = 187.1776
+2025-01-08 15:14:59,376 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,390 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,398 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,408 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,421 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,424 - INFO - Epoch 45: Train Loss = 198.4371, Val Loss = 185.4931
+2025-01-08 15:14:59,424 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,435 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,448 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,455 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,471 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,473 - INFO - Epoch 50: Train Loss = 202.5667, Val Loss = 182.8690
+2025-01-08 15:14:59,473 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,488 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,502 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,508 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,521 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,523 - INFO - Epoch 55: Train Loss = 188.8473, Val Loss = 179.6759
+2025-01-08 15:14:59,526 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,539 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,548 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,560 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,565 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,572 - INFO - Epoch 60: Train Loss = 186.4171, Val Loss = 178.2474
+2025-01-08 15:14:59,579 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,585 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,600 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,606 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,613 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,620 - INFO - Epoch 65: Train Loss = 186.7591, Val Loss = 178.0202
+2025-01-08 15:14:59,624 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,637 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,645 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,650 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,664 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,669 - INFO - Epoch 70: Train Loss = 177.0527, Val Loss = 178.6954
+2025-01-08 15:14:59,674 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,679 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,689 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,698 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,713 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,718 - INFO - Epoch 75: Train Loss = 180.2180, Val Loss = 177.8669
+2025-01-08 15:14:59,720 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,728 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,737 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,755 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,763 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,766 - INFO - Epoch 80: Train Loss = 176.3526, Val Loss = 176.8696
+2025-01-08 15:14:59,769 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,782 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,794 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,801 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,806 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,814 - INFO - Epoch 85: Train Loss = 179.4503, Val Loss = 176.2535
+2025-01-08 15:14:59,818 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,829 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,851 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,854 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,862 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,872 - INFO - Epoch 90: Train Loss = 175.8748, Val Loss = 175.6467
+2025-01-08 15:14:59,880 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,890 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,897 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,909 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,918 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,920 - INFO - Epoch 95: Train Loss = 173.7310, Val Loss = 175.7654
+2025-01-08 15:14:59,926 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,931 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,948 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,952 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,964 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:14:59,970 - INFO - Epoch 100: Train Loss = 172.6915, Val Loss = 174.5969
+2025-01-08 15:15:00,151 - INFO - Training plot saved to data/models/20250108_151457/plots/eb2_india_training_history.png
+2025-01-08 15:15:00,152 - INFO - Model saved to data/models/20250108_151457/checkpoints/eb2_india_model.pt
+2025-01-08 15:15:00,153 - INFO - Model evaluation metrics for eb2_india:
+2025-01-08 15:15:00,153 - INFO - mse: 179.9256
+2025-01-08 15:15:00,153 - INFO - rmse: 13.4136
+2025-01-08 15:15:00,153 - INFO - mae: 11.5091
+2025-01-08 15:15:00,153 - INFO - max_error: 31.0826
+2025-01-08 15:15:00,153 - INFO - r2: 0.2531
+2025-01-08 15:15:00,192 - INFO - 
+Training model for eb3_india
+2025-01-08 15:15:00,252 - INFO - Epoch 5: Train Loss = 276.3876, Val Loss = 300.1887
+2025-01-08 15:15:00,304 - INFO - Epoch 10: Train Loss = 237.4718, Val Loss = 264.9924
+2025-01-08 15:15:00,355 - INFO - Epoch 15: Train Loss = 203.4895, Val Loss = 239.9743
+2025-01-08 15:15:00,406 - INFO - Epoch 20: Train Loss = 179.5488, Val Loss = 229.3125
+2025-01-08 15:15:00,455 - INFO - Epoch 25: Train Loss = 170.5831, Val Loss = 223.8132
+2025-01-08 15:15:00,506 - INFO - Epoch 30: Train Loss = 159.8352, Val Loss = 221.7679
+2025-01-08 15:15:00,556 - INFO - Epoch 35: Train Loss = 152.5182, Val Loss = 222.1424
+2025-01-08 15:15:00,607 - INFO - Epoch 40: Train Loss = 149.1703, Val Loss = 223.3121
+2025-01-08 15:15:00,657 - INFO - Epoch 45: Train Loss = 144.0101, Val Loss = 224.0900
+2025-01-08 15:15:00,708 - INFO - Epoch 50: Train Loss = 145.9875, Val Loss = 224.4731
+2025-01-08 15:15:00,737 - INFO - Early stopping at epoch 53
+2025-01-08 15:15:00,870 - INFO - Training plot saved to data/models/20250108_151457/plots/eb3_india_training_history.png
+2025-01-08 15:15:00,871 - INFO - Model saved to data/models/20250108_151457/checkpoints/eb3_india_model.pt
+2025-01-08 15:15:00,872 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 15:15:00,872 - INFO - mse: 253.9655
+2025-01-08 15:15:00,872 - INFO - rmse: 15.9363
+2025-01-08 15:15:00,872 - INFO - mae: 13.5232
+2025-01-08 15:15:00,872 - INFO - max_error: 41.6766
+2025-01-08 15:15:00,872 - INFO - r2: 0.0652
+2025-01-08 15:15:00,910 - INFO - 
+Training model for f1_india
+2025-01-08 15:15:00,926 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:00,938 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:00,948 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:00,953 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:00,962 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:00,971 - INFO - Epoch 5: Train Loss = 456.0311, Val Loss = 243.6820
+2025-01-08 15:15:00,976 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:00,989 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,000 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,005 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,013 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,022 - INFO - Epoch 10: Train Loss = 431.8428, Val Loss = 220.5391
+2025-01-08 15:15:01,026 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,037 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,044 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,053 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,070 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,074 - INFO - Epoch 15: Train Loss = 379.3461, Val Loss = 186.7507
+2025-01-08 15:15:01,079 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,089 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,101 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,110 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,118 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,125 - INFO - Epoch 20: Train Loss = 320.0674, Val Loss = 167.4514
+2025-01-08 15:15:01,126 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,135 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,146 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,155 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,171 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,174 - INFO - Epoch 25: Train Loss = 282.2678, Val Loss = 159.2486
+2025-01-08 15:15:01,179 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,188 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,198 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,210 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,220 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,225 - INFO - Epoch 30: Train Loss = 269.1552, Val Loss = 156.1409
+2025-01-08 15:15:01,227 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,235 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,247 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,259 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,271 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,275 - INFO - Epoch 35: Train Loss = 247.1895, Val Loss = 155.1691
+2025-01-08 15:15:01,279 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,290 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,298 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,311 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,318 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,326 - INFO - Epoch 40: Train Loss = 222.2841, Val Loss = 155.6806
+2025-01-08 15:15:01,328 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,343 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,350 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,366 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,369 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,377 - INFO - Epoch 45: Train Loss = 221.1165, Val Loss = 156.9782
+2025-01-08 15:15:01,384 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,389 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,400 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,415 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,427 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,428 - INFO - Epoch 50: Train Loss = 212.2138, Val Loss = 157.8148
+2025-01-08 15:15:01,433 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,441 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,454 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,465 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:01,469 - INFO - Early stopping at epoch 54
+2025-01-08 15:15:01,604 - INFO - Training plot saved to data/models/20250108_151457/plots/f1_india_training_history.png
+2025-01-08 15:15:01,604 - INFO - Model saved to data/models/20250108_151457/checkpoints/f1_india_model.pt
+2025-01-08 15:15:01,606 - INFO - Model evaluation metrics for f1_india:
+2025-01-08 15:15:01,606 - INFO - mse: 154.2897
+2025-01-08 15:15:01,606 - INFO - rmse: 12.4213
+2025-01-08 15:15:01,606 - INFO - mae: 11.3928
+2025-01-08 15:15:01,606 - INFO - max_error: 17.9169
+2025-01-08 15:15:01,606 - INFO - r2: 0.1180
+2025-01-08 15:15:01,646 - INFO - 
+Training model for f2a_india
+2025-01-08 15:15:01,708 - INFO - Epoch 5: Train Loss = 622.7766, Val Loss = 187.7113
+2025-01-08 15:15:01,759 - INFO - Epoch 10: Train Loss = 549.4047, Val Loss = 164.3214
+2025-01-08 15:15:01,810 - INFO - Epoch 15: Train Loss = 441.7584, Val Loss = 142.4430
+2025-01-08 15:15:01,859 - INFO - Epoch 20: Train Loss = 364.4124, Val Loss = 130.4459
+2025-01-08 15:15:01,908 - INFO - Epoch 25: Train Loss = 307.5448, Val Loss = 123.6027
+2025-01-08 15:15:01,959 - INFO - Epoch 30: Train Loss = 270.3714, Val Loss = 119.4773
+2025-01-08 15:15:02,008 - INFO - Epoch 35: Train Loss = 236.1840, Val Loss = 117.7661
+2025-01-08 15:15:02,058 - INFO - Epoch 40: Train Loss = 211.7287, Val Loss = 117.0027
+2025-01-08 15:15:02,109 - INFO - Epoch 45: Train Loss = 186.8497, Val Loss = 117.7606
+2025-01-08 15:15:02,160 - INFO - Epoch 50: Train Loss = 178.2870, Val Loss = 118.4267
+2025-01-08 15:15:02,210 - INFO - Epoch 55: Train Loss = 167.2247, Val Loss = 119.0037
+2025-01-08 15:15:02,260 - INFO - Early stopping at epoch 60
+2025-01-08 15:15:02,395 - INFO - Training plot saved to data/models/20250108_151457/plots/f2a_india_training_history.png
+2025-01-08 15:15:02,395 - INFO - Model saved to data/models/20250108_151457/checkpoints/f2a_india_model.pt
+2025-01-08 15:15:02,397 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 15:15:02,397 - INFO - mse: 98.9950
+2025-01-08 15:15:02,397 - INFO - rmse: 9.9496
+2025-01-08 15:15:02,397 - INFO - mae: 7.0016
+2025-01-08 15:15:02,397 - INFO - max_error: 34.2737
+2025-01-08 15:15:02,397 - INFO - r2: 0.4261
+2025-01-08 15:15:02,433 - INFO - 
+Training model for f2b_india
+2025-01-08 15:15:02,494 - INFO - Epoch 5: Train Loss = 556.7361, Val Loss = 242.2905
+2025-01-08 15:15:02,544 - INFO - Epoch 10: Train Loss = 500.2537, Val Loss = 216.5580
+2025-01-08 15:15:02,596 - INFO - Epoch 15: Train Loss = 404.5065, Val Loss = 184.3647
+2025-01-08 15:15:02,646 - INFO - Epoch 20: Train Loss = 328.5571, Val Loss = 172.7796
+2025-01-08 15:15:02,698 - INFO - Epoch 25: Train Loss = 280.2897, Val Loss = 174.5196
+2025-01-08 15:15:02,748 - INFO - Epoch 30: Train Loss = 252.9109, Val Loss = 179.4366
+2025-01-08 15:15:02,799 - INFO - Epoch 35: Train Loss = 241.4344, Val Loss = 182.5683
+2025-01-08 15:15:02,850 - INFO - Epoch 40: Train Loss = 233.5132, Val Loss = 184.7143
+2025-01-08 15:15:02,860 - INFO - Early stopping at epoch 41
+2025-01-08 15:15:03,003 - INFO - Training plot saved to data/models/20250108_151457/plots/f2b_india_training_history.png
+2025-01-08 15:15:03,004 - INFO - Model saved to data/models/20250108_151457/checkpoints/f2b_india_model.pt
+2025-01-08 15:15:03,005 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 15:15:03,005 - INFO - mse: 186.3514
+2025-01-08 15:15:03,005 - INFO - rmse: 13.6511
+2025-01-08 15:15:03,005 - INFO - mae: 12.5778
+2025-01-08 15:15:03,006 - INFO - max_error: 41.3168
+2025-01-08 15:15:03,006 - INFO - r2: 0.0027
+2025-01-08 15:15:03,050 - INFO - 
+Training model for f3_india
+2025-01-08 15:15:03,065 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,077 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,080 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,093 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,107 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,109 - INFO - Epoch 5: Train Loss = 393.1132, Val Loss = 228.9210
+2025-01-08 15:15:03,117 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,124 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,137 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,143 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,149 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,159 - INFO - Epoch 10: Train Loss = 333.0407, Val Loss = 191.6265
+2025-01-08 15:15:03,166 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,178 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,182 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,192 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,208 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,212 - INFO - Epoch 15: Train Loss = 263.8363, Val Loss = 154.3591
+2025-01-08 15:15:03,212 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,226 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,234 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,247 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,253 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,263 - INFO - Epoch 20: Train Loss = 220.0516, Val Loss = 138.2579
+2025-01-08 15:15:03,267 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,282 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,288 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,297 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,315 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,325 - INFO - Epoch 25: Train Loss = 173.4476, Val Loss = 133.2204
+2025-01-08 15:15:03,329 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,340 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,351 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,365 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,375 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,378 - INFO - Epoch 30: Train Loss = 164.8665, Val Loss = 131.4876
+2025-01-08 15:15:03,386 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,397 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,402 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,410 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,425 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,429 - INFO - Epoch 35: Train Loss = 146.9856, Val Loss = 131.0088
+2025-01-08 15:15:03,432 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,447 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,457 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,464 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,480 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,481 - INFO - Epoch 40: Train Loss = 131.8264, Val Loss = 131.9828
+2025-01-08 15:15:03,483 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,500 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,506 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,514 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,525 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,533 - INFO - Epoch 45: Train Loss = 133.9668, Val Loss = 131.8170
+2025-01-08 15:15:03,539 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,549 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,559 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,564 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,574 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,583 - INFO - Epoch 50: Train Loss = 137.8607, Val Loss = 132.1381
+2025-01-08 15:15:03,586 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,597 - WARNING - Found NaN values in batch, skipping
+2025-01-08 15:15:03,603 - INFO - Early stopping at epoch 52
+2025-01-08 15:15:03,738 - INFO - Training plot saved to data/models/20250108_151457/plots/f3_india_training_history.png
+2025-01-08 15:15:03,739 - INFO - Model saved to data/models/20250108_151457/checkpoints/f3_india_model.pt
+2025-01-08 15:15:03,740 - INFO - Model evaluation metrics for f3_india:
+2025-01-08 15:15:03,740 - INFO - mse: 125.4668
+2025-01-08 15:15:03,740 - INFO - rmse: 11.2012
+2025-01-08 15:15:03,740 - INFO - mae: 9.9056
+2025-01-08 15:15:03,740 - INFO - max_error: 18.7113
+2025-01-08 15:15:03,740 - INFO - r2: 0.1691
+2025-01-08 15:15:03,782 - INFO - 
+Training model for f4_india
+2025-01-08 15:15:03,843 - INFO - Epoch 5: Train Loss = 586.8294, Val Loss = 146.7311
+2025-01-08 15:15:03,894 - INFO - Epoch 10: Train Loss = 534.5527, Val Loss = 131.9536
+2025-01-08 15:15:03,944 - INFO - Epoch 15: Train Loss = 438.9729, Val Loss = 106.6409
+2025-01-08 15:15:03,995 - INFO - Epoch 20: Train Loss = 362.5504, Val Loss = 95.4177
+2025-01-08 15:15:04,047 - INFO - Epoch 25: Train Loss = 313.7158, Val Loss = 99.1974
+2025-01-08 15:15:04,098 - INFO - Epoch 30: Train Loss = 291.6006, Val Loss = 104.1907
+2025-01-08 15:15:04,148 - INFO - Epoch 35: Train Loss = 276.5671, Val Loss = 107.7513
+2025-01-08 15:15:04,198 - INFO - Epoch 40: Train Loss = 270.6575, Val Loss = 109.9779
+2025-01-08 15:15:04,208 - INFO - Early stopping at epoch 41
+2025-01-08 15:15:04,337 - INFO - Training plot saved to data/models/20250108_151457/plots/f4_india_training_history.png
+2025-01-08 15:15:04,338 - INFO - Model saved to data/models/20250108_151457/checkpoints/f4_india_model.pt
+2025-01-08 15:15:04,339 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 15:15:04,339 - INFO - mse: 103.6628
+2025-01-08 15:15:04,339 - INFO - rmse: 10.1815
+2025-01-08 15:15:04,339 - INFO - mae: 9.1915
+2025-01-08 15:15:04,339 - INFO - max_error: 18.7072
+2025-01-08 15:15:04,339 - INFO - r2: -0.1417
+2025-01-08 15:15:04,422 - INFO - 
+Training completed successfully!
+2025-01-08 15:15:04,422 - INFO - All model artifacts saved to: data/models/20250108_151457
+2025-01-08 15:15:04,422 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:21:03,145 - WARNING - Could not create symlink: [Errno 17] File exists: 'data/models/20250108_152103' -> 'data/models/latest'. Continuing without symlink.
+2025-01-08 15:21:03,145 - INFO - Created training directory: data/models/20250108_152103
+2025-01-08 15:21:03,145 - INFO - Models will be saved to: data/models/20250108_152103
+2025-01-08 15:21:03,145 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:21:03,162 - INFO - 
+Training model for eb1_india
+2025-01-08 15:21:03,814 - INFO - Epoch 5: Train Loss = 2.0479, Val Loss = 6.9962, LR = 0.000994
+2025-01-08 15:21:03,903 - INFO - Epoch 10: Train Loss = 1.9449, Val Loss = 9.1767, LR = 0.000976
+2025-01-08 15:21:03,990 - INFO - Epoch 15: Train Loss = 1.6646, Val Loss = 12.5340, LR = 0.000946
+2025-01-08 15:21:04,076 - INFO - Epoch 20: Train Loss = 1.3191, Val Loss = 14.4117, LR = 0.000905
+2025-01-08 15:21:04,145 - INFO - Early stopping at epoch 24
+2025-01-08 15:21:04,369 - INFO - Training plot saved to data/models/20250108_152103/plots/eb1_india_training_history.png
+2025-01-08 15:21:04,370 - INFO - Model saved to data/models/20250108_152103/checkpoints/eb1_india_model.pt
+2025-01-08 15:21:04,531 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 15:21:04,531 - INFO - mse: 303.8853
+2025-01-08 15:21:04,531 - INFO - rmse: 17.4323
+2025-01-08 15:21:04,531 - INFO - mae: 12.9008
+2025-01-08 15:21:04,531 - INFO - max_error: 38.2123
+2025-01-08 15:21:04,531 - INFO - r2: -0.2059
+2025-01-08 15:21:04,531 - INFO - within_5_days: 36.9231
+2025-01-08 15:21:04,531 - INFO - within_10_days: 50.7692
+2025-01-08 15:21:04,531 - INFO - 
+Training model for eb2_india
+2025-01-08 15:21:04,535 - ERROR - Error training eb2_india: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- eb2_india_status_CURRENT
+- eb2_india_status_UNAVAILABLE
+
+2025-01-08 15:21:04,535 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 248, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 177, in train_category
+    train_loader, val_loader = predictor.prepare_data(df, val_size=0.2)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 175, in prepare_data
+    val_dataset = PriorityDateDataset(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 70, in __init__
+    self.data_scaled = self.scaler.transform(self.data)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/preprocessing/_data.py", line 1062, in transform
+    X = validate_data(
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2777, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- eb2_india_status_CURRENT
+- eb2_india_status_UNAVAILABLE
+
+2025-01-08 15:21:04,545 - INFO - 
+Training model for eb3_india
+2025-01-08 15:21:04,549 - ERROR - Error training eb3_india: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- eb3_india_status_CURRENT
+- eb3_india_status_UNAVAILABLE
+
+2025-01-08 15:21:04,549 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 248, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 177, in train_category
+    train_loader, val_loader = predictor.prepare_data(df, val_size=0.2)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 175, in prepare_data
+    val_dataset = PriorityDateDataset(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 70, in __init__
+    self.data_scaled = self.scaler.transform(self.data)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/preprocessing/_data.py", line 1062, in transform
+    X = validate_data(
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2777, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- eb3_india_status_CURRENT
+- eb3_india_status_UNAVAILABLE
+
+2025-01-08 15:21:04,549 - INFO - 
+Training model for f1_india
+2025-01-08 15:21:04,552 - ERROR - Error training f1_india: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- f1_india_status_CURRENT
+- f1_india_status_UNAVAILABLE
+
+2025-01-08 15:21:04,553 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 248, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 177, in train_category
+    train_loader, val_loader = predictor.prepare_data(df, val_size=0.2)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 175, in prepare_data
+    val_dataset = PriorityDateDataset(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 70, in __init__
+    self.data_scaled = self.scaler.transform(self.data)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/preprocessing/_data.py", line 1062, in transform
+    X = validate_data(
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2777, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- f1_india_status_CURRENT
+- f1_india_status_UNAVAILABLE
+
+2025-01-08 15:21:04,553 - INFO - 
+Training model for f2a_india
+2025-01-08 15:21:04,651 - INFO - Epoch 5: Train Loss = 21.7125, Val Loss = 8.3336, LR = 0.000994
+2025-01-08 15:21:04,738 - INFO - Epoch 10: Train Loss = 17.3863, Val Loss = 9.5608, LR = 0.000976
+2025-01-08 15:21:04,827 - INFO - Epoch 15: Train Loss = 10.7917, Val Loss = 10.6957, LR = 0.000946
+2025-01-08 15:21:04,913 - INFO - Epoch 20: Train Loss = 10.2026, Val Loss = 9.2502, LR = 0.000905
+2025-01-08 15:21:04,981 - INFO - Early stopping at epoch 24
+2025-01-08 15:21:05,121 - INFO - Training plot saved to data/models/20250108_152103/plots/f2a_india_training_history.png
+2025-01-08 15:21:05,122 - INFO - Model saved to data/models/20250108_152103/checkpoints/f2a_india_model.pt
+2025-01-08 15:21:05,275 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 15:21:05,275 - INFO - mse: 154.3836
+2025-01-08 15:21:05,275 - INFO - rmse: 12.4251
+2025-01-08 15:21:05,275 - INFO - mae: 9.9164
+2025-01-08 15:21:05,275 - INFO - max_error: 43.6109
+2025-01-08 15:21:05,275 - INFO - r2: -0.0267
+2025-01-08 15:21:05,275 - INFO - within_5_days: 16.6667
+2025-01-08 15:21:05,275 - INFO - within_10_days: 80.3030
+2025-01-08 15:21:05,275 - INFO - 
+Training model for f2b_india
+2025-01-08 15:21:05,372 - INFO - Epoch 5: Train Loss = 20.1399, Val Loss = 5.8221, LR = 0.000994
+2025-01-08 15:21:05,472 - INFO - Epoch 10: Train Loss = 16.3119, Val Loss = 7.0469, LR = 0.000976
+2025-01-08 15:21:05,596 - INFO - Epoch 15: Train Loss = 10.9876, Val Loss = 10.2456, LR = 0.000946
+2025-01-08 15:21:05,704 - INFO - Epoch 20: Train Loss = 9.1793, Val Loss = 11.6188, LR = 0.000905
+2025-01-08 15:21:05,761 - INFO - Early stopping at epoch 23
+2025-01-08 15:21:05,902 - INFO - Training plot saved to data/models/20250108_152103/plots/f2b_india_training_history.png
+2025-01-08 15:21:05,903 - INFO - Model saved to data/models/20250108_152103/checkpoints/f2b_india_model.pt
+2025-01-08 15:21:06,061 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 15:21:06,061 - INFO - mse: 259.7044
+2025-01-08 15:21:06,061 - INFO - rmse: 16.1153
+2025-01-08 15:21:06,061 - INFO - mae: 13.8555
+2025-01-08 15:21:06,061 - INFO - max_error: 51.9859
+2025-01-08 15:21:06,061 - INFO - r2: -0.4936
+2025-01-08 15:21:06,061 - INFO - within_5_days: 15.1515
+2025-01-08 15:21:06,061 - INFO - within_10_days: 37.8788
+2025-01-08 15:21:06,061 - INFO - 
+Training model for f3_india
+2025-01-08 15:21:06,065 - ERROR - Error training f3_india: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- f3_india_status_UNAVAILABLE
+
+2025-01-08 15:21:06,065 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 248, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 177, in train_category
+    train_loader, val_loader = predictor.prepare_data(df, val_size=0.2)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 175, in prepare_data
+    val_dataset = PriorityDateDataset(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 70, in __init__
+    self.data_scaled = self.scaler.transform(self.data)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/preprocessing/_data.py", line 1062, in transform
+    X = validate_data(
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/sklearn/utils/validation.py", line 2777, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- f3_india_status_UNAVAILABLE
+
+2025-01-08 15:21:06,065 - INFO - 
+Training model for f4_india
+2025-01-08 15:21:06,166 - INFO - Epoch 5: Train Loss = 20.5663, Val Loss = 5.7033, LR = 0.000994
+2025-01-08 15:21:06,254 - INFO - Epoch 10: Train Loss = 16.1055, Val Loss = 7.0367, LR = 0.000976
+2025-01-08 15:21:06,358 - INFO - Epoch 15: Train Loss = 11.6810, Val Loss = 16.7746, LR = 0.000946
+2025-01-08 15:21:06,461 - INFO - Epoch 20: Train Loss = 10.2569, Val Loss = 16.8084, LR = 0.000905
+2025-01-08 15:21:06,562 - INFO - Epoch 25: Train Loss = 10.2867, Val Loss = 16.4411, LR = 0.000854
+2025-01-08 15:21:06,603 - INFO - Early stopping at epoch 27
+2025-01-08 15:21:06,753 - INFO - Training plot saved to data/models/20250108_152103/plots/f4_india_training_history.png
+2025-01-08 15:21:06,754 - INFO - Model saved to data/models/20250108_152103/checkpoints/f4_india_model.pt
+2025-01-08 15:21:06,910 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 15:21:06,910 - INFO - mse: 403.7993
+2025-01-08 15:21:06,910 - INFO - rmse: 20.0948
+2025-01-08 15:21:06,910 - INFO - mae: 17.6399
+2025-01-08 15:21:06,910 - INFO - max_error: 34.2120
+2025-01-08 15:21:06,910 - INFO - r2: -3.3471
+2025-01-08 15:21:06,910 - INFO - within_5_days: 15.1515
+2025-01-08 15:21:06,910 - INFO - within_10_days: 27.2727
+2025-01-08 15:21:06,958 - INFO - 
+Training completed successfully!
+2025-01-08 15:21:06,958 - INFO - All model artifacts saved to: data/models/20250108_152103
+2025-01-08 15:21:06,958 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:27:50,649 - WARNING - Could not create symlink: [Errno 17] File exists: 'data/models/20250108_152750' -> 'data/models/latest'. Continuing without symlink.
+2025-01-08 15:27:50,650 - INFO - Created training directory: data/models/20250108_152750
+2025-01-08 15:27:50,650 - INFO - Models will be saved to: data/models/20250108_152750
+2025-01-08 15:27:50,650 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:27:50,668 - INFO - 
+Training model for eb1_india
+2025-01-08 15:27:51,342 - INFO - Epoch 5: Train Loss = 2.0258, Val Loss = 7.1000, LR = 0.000994
+2025-01-08 15:27:51,432 - INFO - Epoch 10: Train Loss = 1.8929, Val Loss = 9.7599, LR = 0.000976
+2025-01-08 15:27:51,519 - INFO - Epoch 15: Train Loss = 1.6220, Val Loss = 13.1981, LR = 0.000946
+2025-01-08 15:27:51,606 - INFO - Epoch 20: Train Loss = 1.2527, Val Loss = 17.7009, LR = 0.000905
+2025-01-08 15:27:51,659 - INFO - Early stopping at epoch 23
+2025-01-08 15:27:51,923 - INFO - Training plot saved to data/models/20250108_152750/plots/eb1_india_training_history.png
+2025-01-08 15:27:51,925 - INFO - Model saved to data/models/20250108_152750/checkpoints/eb1_india_model.pt
+2025-01-08 15:27:52,081 - INFO - Model evaluation metrics for eb1_india:
+2025-01-08 15:27:52,081 - INFO - mse: 286.6569
+2025-01-08 15:27:52,081 - INFO - rmse: 16.9309
+2025-01-08 15:27:52,081 - INFO - mae: 12.6046
+2025-01-08 15:27:52,081 - INFO - max_error: 37.7567
+2025-01-08 15:27:52,081 - INFO - r2: -0.1376
+2025-01-08 15:27:52,081 - INFO - within_5_days: 36.9231
+2025-01-08 15:27:52,081 - INFO - within_10_days: 46.1538
+2025-01-08 15:27:52,081 - INFO - 
+Training model for eb2_india
+2025-01-08 15:27:52,169 - INFO - Epoch 5: Train Loss = 11.1191, Val Loss = 13.6780, LR = 0.000994
+2025-01-08 15:27:52,251 - INFO - Epoch 10: Train Loss = 9.7547, Val Loss = 14.0537, LR = 0.000976
+2025-01-08 15:27:52,331 - INFO - Epoch 15: Train Loss = 8.3994, Val Loss = 14.5126, LR = 0.000946
+2025-01-08 15:27:52,410 - INFO - Epoch 20: Train Loss = 7.9019, Val Loss = 13.4206, LR = 0.000905
+2025-01-08 15:27:52,488 - INFO - Epoch 25: Train Loss = 7.2537, Val Loss = 15.0287, LR = 0.000854
+2025-01-08 15:27:52,535 - INFO - Early stopping at epoch 28
+2025-01-08 15:27:52,676 - INFO - Training plot saved to data/models/20250108_152750/plots/eb2_india_training_history.png
+2025-01-08 15:27:52,677 - INFO - Model saved to data/models/20250108_152750/checkpoints/eb2_india_model.pt
+2025-01-08 15:27:52,827 - INFO - Model evaluation metrics for eb2_india:
+2025-01-08 15:27:52,827 - INFO - mse: 536.0092
+2025-01-08 15:27:52,827 - INFO - rmse: 23.1519
+2025-01-08 15:27:52,827 - INFO - mae: 18.9211
+2025-01-08 15:27:52,827 - INFO - max_error: 55.7213
+2025-01-08 15:27:52,827 - INFO - r2: -1.1417
+2025-01-08 15:27:52,827 - INFO - within_5_days: 15.3846
+2025-01-08 15:27:52,827 - INFO - within_10_days: 35.3846
+2025-01-08 15:27:52,827 - INFO - 
+Training model for eb3_india
+2025-01-08 15:27:52,918 - INFO - Epoch 5: Train Loss = 10.9144, Val Loss = 11.0427, LR = 0.000994
+2025-01-08 15:27:53,012 - INFO - Epoch 10: Train Loss = 9.6991, Val Loss = 10.9797, LR = 0.000976
+2025-01-08 15:27:53,112 - INFO - Epoch 15: Train Loss = 7.6979, Val Loss = 11.6286, LR = 0.000946
+2025-01-08 15:27:53,203 - INFO - Epoch 20: Train Loss = 7.4360, Val Loss = 13.9033, LR = 0.000905
+2025-01-08 15:27:53,296 - INFO - Epoch 25: Train Loss = 6.6615, Val Loss = 15.0630, LR = 0.000854
+2025-01-08 15:27:53,387 - INFO - Epoch 30: Train Loss = 6.8574, Val Loss = 15.6614, LR = 0.000794
+2025-01-08 15:27:53,405 - INFO - Early stopping at epoch 31
+2025-01-08 15:27:53,545 - INFO - Training plot saved to data/models/20250108_152750/plots/eb3_india_training_history.png
+2025-01-08 15:27:53,546 - INFO - Model saved to data/models/20250108_152750/checkpoints/eb3_india_model.pt
+2025-01-08 15:27:53,694 - INFO - Model evaluation metrics for eb3_india:
+2025-01-08 15:27:53,694 - INFO - mse: 522.5419
+2025-01-08 15:27:53,694 - INFO - rmse: 22.8592
+2025-01-08 15:27:53,694 - INFO - mae: 19.4524
+2025-01-08 15:27:53,694 - INFO - max_error: 64.0397
+2025-01-08 15:27:53,694 - INFO - r2: -0.8572
+2025-01-08 15:27:53,694 - INFO - within_5_days: 9.2308
+2025-01-08 15:27:53,694 - INFO - within_10_days: 26.1538
+2025-01-08 15:27:53,694 - INFO - 
+Training model for f1_india
+2025-01-08 15:27:53,777 - INFO - Epoch 5: Train Loss = 17.1550, Val Loss = 6.6662, LR = 0.000994
+2025-01-08 15:27:53,856 - INFO - Epoch 10: Train Loss = 14.6308, Val Loss = 9.1517, LR = 0.000976
+2025-01-08 15:27:53,933 - INFO - Epoch 15: Train Loss = 11.4445, Val Loss = 14.2939, LR = 0.000946
+2025-01-08 15:27:54,009 - INFO - Epoch 20: Train Loss = 10.8062, Val Loss = 16.3654, LR = 0.000905
+2025-01-08 15:27:54,076 - INFO - Early stopping at epoch 24
+2025-01-08 15:27:54,211 - INFO - Training plot saved to data/models/20250108_152750/plots/f1_india_training_history.png
+2025-01-08 15:27:54,212 - INFO - Model saved to data/models/20250108_152750/checkpoints/f1_india_model.pt
+2025-01-08 15:27:54,364 - INFO - Model evaluation metrics for f1_india:
+2025-01-08 15:27:54,364 - INFO - mse: 279.7007
+2025-01-08 15:27:54,364 - INFO - rmse: 16.7243
+2025-01-08 15:27:54,364 - INFO - mae: 14.8381
+2025-01-08 15:27:54,364 - INFO - max_error: 26.9780
+2025-01-08 15:27:54,364 - INFO - r2: -0.6918
+2025-01-08 15:27:54,364 - INFO - within_5_days: 16.6667
+2025-01-08 15:27:54,364 - INFO - within_10_days: 31.8182
+2025-01-08 15:27:54,364 - INFO - 
+Training model for f2a_india
+2025-01-08 15:27:54,458 - INFO - Epoch 5: Train Loss = 21.9421, Val Loss = 8.3181, LR = 0.000994
+2025-01-08 15:27:54,589 - INFO - Epoch 10: Train Loss = 18.2083, Val Loss = 7.5257, LR = 0.000976
+2025-01-08 15:27:54,686 - INFO - Epoch 15: Train Loss = 12.1927, Val Loss = 7.5784, LR = 0.000946
+2025-01-08 15:27:54,776 - INFO - Epoch 20: Train Loss = 9.9725, Val Loss = 6.6094, LR = 0.000905
+2025-01-08 15:27:54,862 - INFO - Epoch 25: Train Loss = 7.8361, Val Loss = 6.5703, LR = 0.000854
+2025-01-08 15:27:54,949 - INFO - Epoch 30: Train Loss = 8.3213, Val Loss = 6.7705, LR = 0.000794
+2025-01-08 15:27:55,036 - INFO - Epoch 35: Train Loss = 8.0513, Val Loss = 7.1158, LR = 0.000727
+2025-01-08 15:27:55,121 - INFO - Epoch 40: Train Loss = 7.6084, Val Loss = 7.1671, LR = 0.000655
+2025-01-08 15:27:55,174 - INFO - Early stopping at epoch 43
+2025-01-08 15:27:55,308 - INFO - Training plot saved to data/models/20250108_152750/plots/f2a_india_training_history.png
+2025-01-08 15:27:55,309 - INFO - Model saved to data/models/20250108_152750/checkpoints/f2a_india_model.pt
+2025-01-08 15:27:55,456 - INFO - Model evaluation metrics for f2a_india:
+2025-01-08 15:27:55,456 - INFO - mse: 106.1204
+2025-01-08 15:27:55,457 - INFO - rmse: 10.3015
+2025-01-08 15:27:55,457 - INFO - mae: 4.3339
+2025-01-08 15:27:55,457 - INFO - max_error: 30.1466
+2025-01-08 15:27:55,457 - INFO - r2: 0.2943
+2025-01-08 15:27:55,457 - INFO - within_5_days: 83.3333
+2025-01-08 15:27:55,457 - INFO - within_10_days: 84.8485
+2025-01-08 15:27:55,457 - INFO - 
+Training model for f2b_india
+2025-01-08 15:27:55,547 - INFO - Epoch 5: Train Loss = 19.5859, Val Loss = 5.9725, LR = 0.000994
+2025-01-08 15:27:55,633 - INFO - Epoch 10: Train Loss = 15.0215, Val Loss = 8.5360, LR = 0.000976
+2025-01-08 15:27:55,719 - INFO - Epoch 15: Train Loss = 9.6647, Val Loss = 15.1650, LR = 0.000946
+2025-01-08 15:27:55,807 - INFO - Epoch 20: Train Loss = 8.8126, Val Loss = 12.4098, LR = 0.000905
+2025-01-08 15:27:55,876 - INFO - Early stopping at epoch 24
+2025-01-08 15:27:56,010 - INFO - Training plot saved to data/models/20250108_152750/plots/f2b_india_training_history.png
+2025-01-08 15:27:56,011 - INFO - Model saved to data/models/20250108_152750/checkpoints/f2b_india_model.pt
+2025-01-08 15:27:56,157 - INFO - Model evaluation metrics for f2b_india:
+2025-01-08 15:27:56,157 - INFO - mse: 387.8795
+2025-01-08 15:27:56,157 - INFO - rmse: 19.6947
+2025-01-08 15:27:56,157 - INFO - mae: 17.1671
+2025-01-08 15:27:56,157 - INFO - max_error: 66.4052
+2025-01-08 15:27:56,157 - INFO - r2: -1.2308
+2025-01-08 15:27:56,157 - INFO - within_5_days: 12.1212
+2025-01-08 15:27:56,157 - INFO - within_10_days: 24.2424
+2025-01-08 15:27:56,157 - INFO - 
+Training model for f3_india
+2025-01-08 15:27:56,241 - INFO - Epoch 5: Train Loss = 16.2360, Val Loss = 8.9638, LR = 0.000994
+2025-01-08 15:27:56,319 - INFO - Epoch 10: Train Loss = 14.0463, Val Loss = 8.9810, LR = 0.000976
+2025-01-08 15:27:56,397 - INFO - Epoch 15: Train Loss = 11.0509, Val Loss = 9.6283, LR = 0.000946
+2025-01-08 15:27:56,474 - INFO - Epoch 20: Train Loss = 9.2987, Val Loss = 9.6813, LR = 0.000905
+2025-01-08 15:27:56,552 - INFO - Epoch 25: Train Loss = 8.2495, Val Loss = 9.2343, LR = 0.000854
+2025-01-08 15:27:56,598 - INFO - Early stopping at epoch 28
+2025-01-08 15:27:56,738 - INFO - Training plot saved to data/models/20250108_152750/plots/f3_india_training_history.png
+2025-01-08 15:27:56,739 - INFO - Model saved to data/models/20250108_152750/checkpoints/f3_india_model.pt
+2025-01-08 15:27:56,950 - INFO - Model evaluation metrics for f3_india:
+2025-01-08 15:27:56,950 - INFO - mse: 173.1022
+2025-01-08 15:27:56,950 - INFO - rmse: 13.1568
+2025-01-08 15:27:56,950 - INFO - mae: 11.6529
+2025-01-08 15:27:56,950 - INFO - max_error: 25.8389
+2025-01-08 15:27:56,950 - INFO - r2: -0.1822
+2025-01-08 15:27:56,950 - INFO - within_5_days: 15.1515
+2025-01-08 15:27:56,950 - INFO - within_10_days: 40.9091
+2025-01-08 15:27:56,950 - INFO - 
+Training model for f4_india
+2025-01-08 15:27:57,041 - INFO - Epoch 5: Train Loss = 20.3895, Val Loss = 5.6409, LR = 0.000994
+2025-01-08 15:27:57,126 - INFO - Epoch 10: Train Loss = 15.5705, Val Loss = 6.8420, LR = 0.000976
+2025-01-08 15:27:57,210 - INFO - Epoch 15: Train Loss = 11.3313, Val Loss = 13.2363, LR = 0.000946
+2025-01-08 15:27:57,296 - INFO - Epoch 20: Train Loss = 10.3012, Val Loss = 9.8293, LR = 0.000905
+2025-01-08 15:27:57,381 - INFO - Epoch 25: Train Loss = 9.5679, Val Loss = 7.9666, LR = 0.000854
+2025-01-08 15:27:57,415 - INFO - Early stopping at epoch 27
+2025-01-08 15:27:57,554 - INFO - Training plot saved to data/models/20250108_152750/plots/f4_india_training_history.png
+2025-01-08 15:27:57,555 - INFO - Model saved to data/models/20250108_152750/checkpoints/f4_india_model.pt
+2025-01-08 15:27:57,704 - INFO - Model evaluation metrics for f4_india:
+2025-01-08 15:27:57,704 - INFO - mse: 213.5960
+2025-01-08 15:27:57,704 - INFO - rmse: 14.6149
+2025-01-08 15:27:57,704 - INFO - mae: 13.0760
+2025-01-08 15:27:57,704 - INFO - max_error: 25.9904
+2025-01-08 15:27:57,704 - INFO - r2: -1.2995
+2025-01-08 15:27:57,704 - INFO - within_5_days: 13.6364
+2025-01-08 15:27:57,704 - INFO - within_10_days: 40.9091
+2025-01-08 15:27:57,751 - INFO - 
+Training completed successfully!
+2025-01-08 15:27:57,751 - INFO - All model artifacts saved to: data/models/20250108_152750
+2025-01-08 15:27:57,751 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:41:47,873 - WARNING - Could not create symlink: [Errno 17] File exists: 'data/models/20250108_154147' -> 'data/models/latest'. Continuing without symlink.
+2025-01-08 15:41:47,873 - INFO - Models will be saved to: data/models/20250108_154147
+2025-01-08 15:41:47,873 - INFO - Latest symlink points to: data/models/latest
+2025-01-08 15:41:47,884 - INFO - 
+Training model for eb1_india
+2025-01-08 15:41:48,920 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:41:49,429 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:41:49,928 - INFO - Early stopping at epoch 15
+2025-01-08 15:41:49,929 - ERROR - Error training eb1_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:41:49,929 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 197, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 144, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 348, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:41:49,936 - INFO - 
+Training model for eb2_india
+2025-01-08 15:41:50,393 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:41:50,952 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:41:51,434 - INFO - Early stopping at epoch 15
+2025-01-08 15:41:51,434 - ERROR - Error training eb2_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:41:51,434 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 197, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 144, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 348, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:41:51,435 - INFO - 
+Training model for eb3_india
+2025-01-08 15:41:51,892 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:41:52,351 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:41:52,774 - INFO - Early stopping at epoch 15
+2025-01-08 15:41:52,774 - ERROR - Error training eb3_india: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:41:52,774 - ERROR - Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 197, in main
+    metrics = train_category(df, category, run_dir)
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/train.py", line 144, in train_category
+    history = predictor.train(
+  File "/Users/yashmit/Documents/greencard-priority-predictor/backend/model.py", line 348, in train
+    self.model.load_state_dict(best_model)
+  File "/Users/yashmit/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 2516, in load_state_dict
+    raise TypeError(
+TypeError: Expected state_dict to be dict-like, got <class 'NoneType'>.
+2025-01-08 15:41:52,968 - INFO - 
+Training completed successfully!
+2025-01-08 15:41:52,968 - INFO - All model artifacts saved to: data/models/20250108_154147
+2025-01-08 15:41:52,968 - INFO - Access latest models at: data/models/latest
+2025-01-08 15:48:11,835 - INFO - Created training directory: data/models/20250108_154811
+2025-01-08 15:48:11,836 - INFO - Models will be saved to: data/models/20250108_154811
+2025-01-08 15:48:11,844 - INFO - 
+Training model for eb1_india
+2025-01-08 15:48:12,426 - INFO - Epoch 5: Train Loss = 56.6038, Val Loss = 189.5395, Within 5 days: 65.2%, Within 10 days: 65.2%
+2025-01-08 15:48:12,478 - INFO - Epoch 10: Train Loss = 44.5977, Val Loss = 170.0978, Within 5 days: 28.8%, Within 10 days: 65.2%
+2025-01-08 15:48:12,529 - INFO - Epoch 15: Train Loss = 39.9703, Val Loss = 190.2282, Within 5 days: 25.8%, Within 10 days: 33.3%
+2025-01-08 15:48:12,579 - INFO - Epoch 20: Train Loss = 35.7227, Val Loss = 199.9107, Within 5 days: 27.3%, Within 10 days: 31.8%
+2025-01-08 15:48:12,628 - INFO - Early stopping at epoch 25
+2025-01-08 15:48:12,779 - INFO - Training plot saved to data/models/20250108_154811/plots/eb1_india_training.png
+2025-01-08 15:48:12,781 - INFO - Model saved to data/models/20250108_154811/checkpoints/eb1_india_model.pt
+2025-01-08 15:48:12,781 - INFO - Model metrics for eb1_india:
+2025-01-08 15:48:12,781 - INFO - rmse: 14.0768
+2025-01-08 15:48:12,781 - INFO - mae: 11.3857
+2025-01-08 15:48:12,781 - INFO - within_5_days: 27.2727
+2025-01-08 15:48:12,781 - INFO - within_10_days: 31.8182
+2025-01-08 15:48:12,781 - INFO - 
+Training model for eb2_india
+2025-01-08 15:48:12,837 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:48:12,887 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:48:12,936 - INFO - Early stopping at epoch 15
+2025-01-08 15:48:12,990 - INFO - Training plot saved to data/models/20250108_154811/plots/eb2_india_training.png
+2025-01-08 15:48:12,991 - INFO - Model saved to data/models/20250108_154811/checkpoints/eb2_india_model.pt
+2025-01-08 15:48:12,991 - INFO - Model metrics for eb2_india:
+2025-01-08 15:48:12,991 - INFO - rmse: nan
+2025-01-08 15:48:12,991 - INFO - mae: nan
+2025-01-08 15:48:12,991 - INFO - within_5_days: 0.0000
+2025-01-08 15:48:12,991 - INFO - within_10_days: 0.0000
+2025-01-08 15:48:12,991 - INFO - 
+Training model for eb3_india
+2025-01-08 15:48:13,046 - INFO - Epoch 5: Train Loss = 273.3688, Val Loss = 240.3213, Within 5 days: 45.5%, Within 10 days: 57.6%
+2025-01-08 15:48:13,094 - INFO - Epoch 10: Train Loss = 168.0331, Val Loss = 207.4182, Within 5 days: 7.6%, Within 10 days: 19.7%
+2025-01-08 15:48:13,143 - INFO - Epoch 15: Train Loss = 153.0642, Val Loss = 201.6902, Within 5 days: 7.6%, Within 10 days: 25.8%
+2025-01-08 15:48:13,193 - INFO - Epoch 20: Train Loss = 149.6737, Val Loss = 208.1129, Within 5 days: 9.1%, Within 10 days: 19.7%
+2025-01-08 15:48:13,243 - INFO - Epoch 25: Train Loss = 143.1667, Val Loss = 208.9528, Within 5 days: 9.1%, Within 10 days: 18.2%
+2025-01-08 15:48:13,263 - INFO - Early stopping at epoch 27
+2025-01-08 15:48:13,317 - INFO - Training plot saved to data/models/20250108_154811/plots/eb3_india_training.png
+2025-01-08 15:48:13,318 - INFO - Model saved to data/models/20250108_154811/checkpoints/eb3_india_model.pt
+2025-01-08 15:48:13,318 - INFO - Model metrics for eb3_india:
+2025-01-08 15:48:13,318 - INFO - rmse: 17.1653
+2025-01-08 15:48:13,318 - INFO - mae: 14.9051
+2025-01-08 15:48:13,318 - INFO - within_5_days: 9.0909
+2025-01-08 15:48:13,318 - INFO - within_10_days: 19.6970
+2025-01-08 15:48:13,421 - INFO - 
+Training completed successfully!
+2025-01-08 15:48:13,421 - INFO - All model artifacts saved to: data/models/20250108_154811
+2025-01-08 15:49:26,621 - INFO - Created training directory: data/models/20250108_154926
+2025-01-08 15:49:26,621 - INFO - Models will be saved to: data/models/20250108_154926
+2025-01-08 15:49:26,631 - INFO - 
+Training model for eb1_india
+2025-01-08 15:49:27,204 - INFO - Epoch 5: Train Loss = 56.6038, Val Loss = 189.5395, Within 5 days: 65.2%, Within 10 days: 65.2%
+2025-01-08 15:49:27,255 - INFO - Epoch 10: Train Loss = 44.5977, Val Loss = 170.0978, Within 5 days: 28.8%, Within 10 days: 65.2%
+2025-01-08 15:49:27,304 - INFO - Epoch 15: Train Loss = 39.9703, Val Loss = 190.2282, Within 5 days: 25.8%, Within 10 days: 33.3%
+2025-01-08 15:49:27,354 - INFO - Epoch 20: Train Loss = 35.7227, Val Loss = 199.9107, Within 5 days: 27.3%, Within 10 days: 31.8%
+2025-01-08 15:49:27,425 - INFO - Early stopping at epoch 25
+2025-01-08 15:49:27,573 - INFO - Training plot saved to data/models/20250108_154926/plots/eb1_india_training.png
+2025-01-08 15:49:27,574 - INFO - Model saved to data/models/20250108_154926/checkpoints/eb1_india_model.pt
+2025-01-08 15:49:27,574 - INFO - Model metrics for eb1_india:
+2025-01-08 15:49:27,574 - INFO - rmse: 14.0768
+2025-01-08 15:49:27,574 - INFO - mae: 11.3857
+2025-01-08 15:49:27,574 - INFO - within_5_days: 27.2727
+2025-01-08 15:49:27,574 - INFO - within_10_days: 31.8182
+2025-01-08 15:49:27,574 - INFO - 
+Training model for eb2_india
+2025-01-08 15:49:27,631 - INFO - Epoch 5: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:49:27,682 - INFO - Epoch 10: Train Loss = nan, Val Loss = nan, Within 5 days: 0.0%, Within 10 days: 0.0%
+2025-01-08 15:49:27,731 - INFO - Early stopping at epoch 15
+2025-01-08 15:49:27,778 - INFO - Training plot saved to data/models/20250108_154926/plots/eb2_india_training.png
+2025-01-08 15:49:27,779 - INFO - Model saved to data/models/20250108_154926/checkpoints/eb2_india_model.pt
+2025-01-08 15:49:27,779 - INFO - Model metrics for eb2_india:
+2025-01-08 15:49:27,779 - INFO - rmse: nan
+2025-01-08 15:49:27,779 - INFO - mae: nan
+2025-01-08 15:49:27,779 - INFO - within_5_days: 0.0000
+2025-01-08 15:49:27,779 - INFO - within_10_days: 0.0000
+2025-01-08 15:49:27,779 - INFO - 
+Training model for eb3_india
+2025-01-08 15:49:27,834 - INFO - Epoch 5: Train Loss = 273.3688, Val Loss = 240.3213, Within 5 days: 45.5%, Within 10 days: 57.6%
+2025-01-08 15:49:27,882 - INFO - Epoch 10: Train Loss = 168.0331, Val Loss = 207.4182, Within 5 days: 7.6%, Within 10 days: 19.7%
+2025-01-08 15:49:27,930 - INFO - Epoch 15: Train Loss = 153.0642, Val Loss = 201.6902, Within 5 days: 7.6%, Within 10 days: 25.8%
+2025-01-08 15:49:27,976 - INFO - Epoch 20: Train Loss = 149.6737, Val Loss = 208.1129, Within 5 days: 9.1%, Within 10 days: 19.7%
+2025-01-08 15:49:28,024 - INFO - Epoch 25: Train Loss = 143.1667, Val Loss = 208.9528, Within 5 days: 9.1%, Within 10 days: 18.2%
+2025-01-08 15:49:28,043 - INFO - Early stopping at epoch 27
+2025-01-08 15:49:28,098 - INFO - Training plot saved to data/models/20250108_154926/plots/eb3_india_training.png
+2025-01-08 15:49:28,099 - INFO - Model saved to data/models/20250108_154926/checkpoints/eb3_india_model.pt
+2025-01-08 15:49:28,099 - INFO - Model metrics for eb3_india:
+2025-01-08 15:49:28,099 - INFO - rmse: 17.1653
+2025-01-08 15:49:28,099 - INFO - mae: 14.9051
+2025-01-08 15:49:28,099 - INFO - within_5_days: 9.0909
+2025-01-08 15:49:28,099 - INFO - within_10_days: 19.6970
+2025-01-08 15:49:28,204 - INFO - 
+Training completed successfully!
+2025-01-08 15:49:28,204 - INFO - All model artifacts saved to: data/models/20250108_154926
